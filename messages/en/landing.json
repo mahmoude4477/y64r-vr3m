@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "title": "Infection-control compliance, measured",
+    "description": "Measure infection-control compliance with realistic simulations, a smart camera scan of the workplace and clear reports, based on WHO and CDC guidance."
+  },
+  "hero": {
+    "eyebrow": "For universities, hospitals and training centers",
+    "titleLead": "Measure infection control",
+    "titleAccent": "as it really happens, not as assumed",
+    "description": "Realistic training simulations, a smart camera scan of the workplace and reports that show where things go wrong, all in one platform.",
+    "primaryCta": "Create a free account",
+    "secondaryCta": "How it works",
+    "haveAccount": "Already have an account?",
+    "signIn": "Sign in",
+    "trust": "Protocols based on <b>WHO</b> and <b>CDC</b> guidance"
+  },
+  "visual": {
+    "label": "Illustration of Waqaya: the institution dashboard on a computer and a training simulation question on a phone",
+    "sample": "Sample data",
+    "dashboard": {
+      "title": "Institution dashboard",
+      "compliance": "Average compliance",
+      "finalizedScans": "Finalized scans",
+      "completedSimulations": "Simulations",
+      "trend": "Monthly compliance trend",
+      "target": "Target"
+    },
+    "phone": {
+      "scenario": "Blood spill on the ward",
+      "question": "How do you clean and disinfect the area?",
+      "correct": "Absorb the blood first, then disinfect",
+      "wrong": "Spray disinfectant and wipe at once"
+    }
+  },
+  "features": {
+    "kicker": "Features",
+    "title": "Three tools, one goal: compliance you can measure",
+    "items": {
+      "simulation": {
+        "title": "Training simulations",
+        "description": "Real situations from the workplace: decide what to do stage by stage, then see your score and the reason behind every mistake.",
+        "audience": "For trainees"
+      },
+      "scan": {
+        "title": "Smart scan",
+        "description": "Photograph the area and AI suggests a verdict for every step the photo shows; the examiner makes the final call.",
+        "audience": "For institution examiners"
+      },
+      "reports": {
+        "title": "Reports and institution dashboard",
+        "description": "Results for every trainee and department, the most frequent mistakes and a print-ready scan report.",
+        "audience": "For institutions"
+      }
+    }
+  },
+  "howItWorks": {
+    "kicker": "How it works",
+    "title": "Three steps to get started",
+    "lead": "On your phone or computer, in Arabic or English.",
+    "steps": {
+      "choose": {
+        "title": "Pick a protocol",
+        "description": "Sharps safety, healthcare waste, hand hygiene and more, ready with their steps and references."
+      },
+      "practice": {
+        "title": "Train or scan",
+        "description": "Start a simulation scenario, or photograph the workplace if you are an examiner at your institution."
+      },
+      "improve": {
+        "title": "Track and improve",
+        "description": "Your result appears right away with the reason for each mistake, and your institution sees where the team needs training."
+      }
+    }
+  },
+  "institutions": {
+    "kicker": "For institutions",
+    "title": "A clear picture of your team's compliance",
+    "lead": "Measure your team's compliance regularly and know where training should start.",
+    "points": {
+      "byDepartment": "Compliance by department and protocol, month after month.",
+      "topMistakes": "The most frequent mistakes, each with a suggested training scenario.",
+      "membersAndRoles": "Invitations and roles for members; each institution sees only its own data."
+    },
+    "cta": {
+      "signUpNote": "Try the training simulations yourself and see how the platform works.",
+      "contact": "Contact us to add your institution"
+    },
+    "chart": {
+      "label": "Illustration of an institution report: compliance by department, and the most frequent mistake with the training suggested for it",
+      "title": "Compliance by department",
+      "departments": {
+        "emergency": "Emergency",
+        "intensiveCare": "Intensive care",
+        "internalMedicine": "Internal medicine"
+      },
+      "topMistakeLabel": "Most frequent mistake",
+      "topMistake": "Sharps container filled above the fill line",
+      "suggested": "Suggested training:",
+      "scenario": "A used needle after an injection"
+    }
+  },
+  "closing": {
+    "titleStart": "From finding the failure after it happens",
+    "titleEnd": "to catching it before it becomes a risk.",
+    "description": "Create your account and start your first scenario in minutes.",
+    "contact": "Contact us"
+  },
+  "opensInNewTab": "opens in a new tab"
+}

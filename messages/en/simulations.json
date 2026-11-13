@@ -1,0 +1,434 @@
+{
+  "title": "Simulations",
+  "description": "Realistic training scenarios that score your decisions step by step.",
+  "catalogue": {
+    "continueTitle": "Pick up where you left off",
+    "listLabel": "Scenarios",
+    "filters": {
+      "label": "Filter scenarios",
+      "protocol": "Protocol",
+      "allProtocols": "All protocols",
+      "difficulty": "Level",
+      "allDifficulties": "All levels",
+      "clear": "Clear filters",
+      "results": "{count, plural, =0 {No scenarios} one {1 scenario} other {{n} scenarios}}"
+    },
+    "card": {
+      "stages": "{count, plural, one {1 stage} other {{n} stages}}",
+      "minutes": "{count, plural, one {1 min} other {{n} min}}",
+      "completed": "{count, plural, =0 {Not completed yet} one {Completed once} other {Completed {n} times}}",
+      "best": "Best",
+      "lastResult": "Last result",
+      "start": "Start",
+      "continue": "Continue",
+      "tryAgain": "Try again",
+      "progress": "Stage {current} of {total}"
+    },
+    "empty": {
+      "title": "No scenarios yet",
+      "description": "Training scenarios will appear here as soon as they are published."
+    },
+    "noResults": {
+      "title": "No scenarios match these filters",
+      "description": "Try another protocol or level, or clear the filters."
+    }
+  },
+  "player": {
+    "situation": "The situation",
+    "protocol": "Protocol",
+    "readProtocol": "Read the protocol",
+    "howTitle": "How it works",
+    "how": {
+      "decide": "Each stage describes a moment in the situation. Choose what you would do.",
+      "kinds": "Some stages have one right answer; others ask you to choose all that apply.",
+      "final": "Your answer is final once you confirm it, just as a real action cannot be undone.",
+      "saved": "Your progress is saved after each stage, so you can leave and continue later.",
+      "result": "At the end you see your score, your risk level and the reason behind every choice."
+    },
+    "start": "Start the simulation",
+    "starting": "Starting…",
+    "bestSoFar": "Your best score so far",
+    "viewLast": "View your last result",
+    "noStages": {
+      "title": "This scenario has no stages yet",
+      "description": "Choose another scenario from the catalogue."
+    },
+    "backToCatalogue": "All simulations",
+    "stage": {
+      "label": "Stage {current} of {total}",
+      "progress": "Simulation progress",
+      "chooseOne": "Choose one answer.",
+      "chooseAll": "Choose all that apply.",
+      "confirm": "Confirm answer",
+      "confirmLast": "Confirm and see my result",
+      "saving": "Saving…",
+      "final": "Your answer is final once you confirm it.",
+      "required": "Choose an answer first.",
+      "requiredMulti": "Choose at least one option.",
+      "saved": "Answer saved. Stage {current} of {total}."
+    },
+    "leave": "Continue later",
+    "restart": {
+      "button": "Start over",
+      "title": "Start this scenario over?",
+      "description": "A new attempt starts from the first stage. Your answers so far stay in your history as an unfinished attempt.",
+      "confirm": "Start over",
+      "working": "Starting over…"
+    },
+    "finishing": "Calculating your result…",
+    "ready": {
+      "title": "All stages answered",
+      "description": "Submit to see your score and the explanation of every choice.",
+      "submit": "See my result"
+    },
+    "errors": {
+      "generic": "Something went wrong. Please try again.",
+      "network": "Could not reach the server. Check your connection and try again.",
+      "stale": "This attempt changed in another tab or window, so the page has been updated.",
+      "notFound": "This attempt is no longer available.",
+      "invalid": "That answer could not be accepted. Please choose again.",
+      "rateLimited": "You have started many attempts in the last hour. Please try again later.",
+      "noStages": "This scenario has no stages yet.",
+      "notPlayable": "This scenario is no longer available to you, so this attempt cannot be finished. Your answers so far are kept.",
+      "otherInstitution": "This attempt counts for an institution that is not your active one, so it cannot be continued here. Your answers so far are kept, and it continues when that institution is your active one again.",
+      "scenarioGone": "This scenario is no longer available to you. It may have been unpublished or replaced by a new version."
+    }
+  },
+  "result": {
+    "completedOn": "Completed on {date}",
+    "trainee": "Trainee",
+    "summary": {
+      "label": "Attempt summary",
+      "score": "Score",
+      "risk": "Risk level",
+      "stages": "Correct stages",
+      "stagesValue": "{correct} of {total}",
+      "time": "Time taken",
+      "notAssessable": "No stage of this scenario is linked to a protocol step, so there is no score or risk level.",
+      "riskHint": {
+        "critical": "A critical step was broken.",
+        "belowHalf": "The score is below 50%.",
+        "high": "A critical step was broken, or the score is below 50%.",
+        "mandatory": "A mandatory step was not followed. That means at least a medium risk, whatever the score.",
+        "belowEighty": "No mandatory step was missed, but the score is below 80%.",
+        "medium": "A mandatory step was not followed, or the score is below 80%.",
+        "gaps": "No critical or mandatory step was missed and the score is 80% or more, but some steps can still improve.",
+        "clean": "Every protocol step this scenario checks was followed."
+      }
+    },
+    "critical": {
+      "title": "Critical mistake",
+      "description": "Breaking a critical step always means a high risk, whatever the score. Critical steps broken in this attempt:"
+    },
+    "debrief": {
+      "title": "Personal summary",
+      "description": "A short summary of this attempt, written by AI from its results.",
+      "generate": "Write my summary",
+      "generating": "Writing your summary…",
+      "done": "Your summary is ready.",
+      "failed": "The summary could not be written right now. Your results and recommendations do not depend on it.",
+      "aiNote": "Written by AI from the results of this attempt. Always check it against the protocol.",
+      "notRequested": "The trainee has not asked for a personal summary of this attempt.",
+      "otherInstitution": "A personal summary of an attempt made in an institution can be written only while that institution is your active one.",
+      "notAssessable": "A personal summary needs a scored attempt."
+    },
+    "recommendations": {
+      "title": "What to work on",
+      "description": "Steps to improve, most important first.",
+      "empty": "Nothing to improve here: every step this scenario checks was followed.",
+      "critical": "Critical",
+      "practise": "Practise: {title}",
+      "practiseAgain": "Try this scenario again",
+      "readProtocol": "Read the protocol"
+    },
+    "strengths": {
+      "title": "What you did well",
+      "description": "Protocol steps you handled correctly in this attempt.",
+      "titleStaff": "What the trainee did well",
+      "descriptionStaff": "Protocol steps the trainee handled correctly in this attempt.",
+      "empty": "No step was handled fully correctly this time. The review below shows what to change."
+    },
+    "review": {
+      "title": "Stage-by-stage review",
+      "description": "Every option, with the reason it is right or wrong.",
+      "stage": "Stage {n}",
+      "correct": "Correct",
+      "incorrect": "Incorrect",
+      "notAnswered": "Not answered",
+      "state": {
+        "chosen_correct": "Your choice: correct",
+        "chosen_wrong": "Your choice: wrong",
+        "missed": "Correct option you missed",
+        "avoided": "Correctly avoided",
+        "not_chosen": "Not chosen"
+      },
+      "stateStaff": {
+        "chosen_correct": "Trainee's choice: correct",
+        "chosen_wrong": "Trainee's choice: wrong",
+        "missed": "Correct option the trainee missed"
+      },
+      "criticalOption": "Critical mistake",
+      "step": "Protocol step",
+      "source": "Source"
+    },
+    "status": {
+      "inProgressTitle": "This attempt is not finished yet",
+      "inProgressDescription": "Continue the scenario to see the result.",
+      "inProgressDescriptionStaff": "The result appears here once the trainee finishes the scenario.",
+      "unavailableDescription": "This scenario is not available at the moment, so this attempt cannot be continued.",
+      "otherInstitutionDescription": "This attempt was started in another institution, so it can be continued only while that institution is your active one.",
+      "otherOpenDescription": "An unfinished attempt of this scenario for your active institution comes first here. This one can be continued after that attempt is finished, or from your individual account.",
+      "abandonedTitle": "This attempt was not finished",
+      "abandonedDescription": "It was closed before the last stage: a new attempt of the scenario was started, or the scenario was replaced by a new version.",
+      "continue": "Continue",
+      "start": "Start again"
+    },
+    "actions": {
+      "tryAgain": "Try again",
+      "back": "All simulations"
+    }
+  },
+  "meta": {
+    "playTitle": "{title} · Simulation",
+    "resultTitle": "Result: {title}",
+    "editTitle": "Edit: {title}",
+    "previewTitle": "Preview: {title}"
+  },
+  "admin": {
+    "list": {
+      "title": "Simulation scenarios",
+      "description": "Create, edit, version and publish the training scenarios of the platform and of institutions.",
+      "new": "New scenario",
+      "heading": "Scenarios",
+      "filters": {
+        "label": "Filter scenarios",
+        "search": "Search",
+        "searchPlaceholder": "Title or address",
+        "submit": "Search",
+        "owner": "Owner",
+        "allOwners": "All owners",
+        "global": "Global",
+        "institutions": "Institutions",
+        "status": "Status",
+        "allStatuses": "All statuses",
+        "notPublished": "Not published",
+        "protocol": "Protocol",
+        "allProtocols": "All protocols",
+        "clear": "Clear filters",
+        "results": "{count, plural, =0 {No scenarios} one {1 scenario} other {{n} scenarios}}"
+      },
+      "row": {
+        "stages": "{count, plural, =0 {No stages} one {1 stage} other {{n} stages}}",
+        "attempts": "{count, plural, =0 {No attempts} one {1 attempt} other {{n} attempts}}",
+        "updated": "Updated {date}",
+        "open": "Open",
+        "preview": "Preview",
+        "protocolDraft": "Protocol not published"
+      },
+      "empty": {
+        "title": "No scenarios yet",
+        "description": "Create the first training scenario: start with the basics, then add its stages."
+      },
+      "noResults": {
+        "title": "No scenario matches these filters",
+        "description": "Change the filters or clear them."
+      },
+      "pagination": {
+        "label": "Pages",
+        "previous": "Previous page",
+        "next": "Next page",
+        "page": "Page {page} of {pages}"
+      }
+    },
+    "status": {
+      "published": "Published",
+      "unpublished": "Unpublished",
+      "draft": "Draft"
+    },
+    "owner": {
+      "label": "Owner",
+      "global": "Global"
+    },
+    "version": "Version {n}",
+    "create": {
+      "title": "New scenario",
+      "description": "Start with the basics. You add the stages on the next page, then preview the scenario and publish it.",
+      "back": "All scenarios",
+      "ownerLegend": "Who sees this scenario",
+      "ownerGlobal": "Everyone",
+      "ownerGlobalHint": "All users of the platform. It uses a global protocol.",
+      "ownerInstitution": "One institution",
+      "ownerInstitutionHint": "Only the members of the institution. It can use a global protocol or one of the institution's own.",
+      "ownerFixed": "The owner cannot be changed after the scenario is created.",
+      "institution": "Institution",
+      "institutionPlaceholder": "Choose an institution",
+      "institutionSearch": "Search institutions",
+      "institutionEmpty": "No institution found.",
+      "institutionRequired": "Choose the institution.",
+      "noInstitutions": "There are no institutions yet.",
+      "slug": "Address in the link",
+      "slugHint": "The scenario opens at <path>/simulations/{slug}</path>. Lowercase English letters, digits and hyphens. It cannot be changed later.",
+      "submit": "Create and add the stages",
+      "submitting": "Creating…",
+      "created": "Draft created. Now add its stages."
+    },
+    "fields": {
+      "titleAr": "Title (Arabic)",
+      "titleEn": "Title (English)",
+      "introAr": "Short introduction (Arabic)",
+      "introEn": "Short introduction (English)",
+      "introHint": "One or two sentences, shown on the catalogue card.",
+      "settingAr": "The situation (Arabic)",
+      "settingEn": "The situation (English)",
+      "settingHint": "Where and when it happens, and the trainee's role.",
+      "protocol": "Protocol",
+      "protocolHint": "Options link to the steps of this protocol.",
+      "protocolPlaceholder": "Choose a protocol",
+      "protocolGlobal": "Global protocols",
+      "protocolInstitution": "Institution protocols",
+      "protocolDraft": "{title} (not published)",
+      "difficulty": "Level",
+      "minutes": "Estimated time (minutes)",
+      "kind": "Answer type",
+      "kindSingle": "One correct answer",
+      "kindMulti": "Choose all that apply",
+      "contextAr": "What happens just before (Arabic, optional)",
+      "contextEn": "What happens just before (English, optional)",
+      "promptAr": "Question (Arabic)",
+      "promptEn": "Question (English)",
+      "optionTextAr": "Option text (Arabic)",
+      "optionTextEn": "Option text (English)",
+      "feedbackAr": "Explanation (Arabic)",
+      "feedbackEn": "Explanation (English)",
+      "feedbackHint": "Why this option is right or wrong, with its source (WHO, CDC).",
+      "correct": "Correct option",
+      "critical": "Critical mistake",
+      "criticalHint": "Choosing this wrong option is an automatic high risk.",
+      "step": "Protocol step",
+      "stepNone": "Not linked to a step",
+      "stepHint": "The step this choice follows or breaks. It drives the score.",
+      "stepCritical": "critical"
+    },
+    "editor": {
+      "back": "All scenarios",
+      "basics": "Basics",
+      "basicsDescription": "What the trainee reads before the first stage.",
+      "stages": "Stages",
+      "stagesDescription": "The trainee answers the stages in this order, and each answer is final.",
+      "stage": "Stage {n}",
+      "option": "Option {n}",
+      "options": "Options",
+      "addStage": "Add a stage",
+      "addOption": "Add an option",
+      "removeStage": "Remove stage {n}",
+      "removeOption": "Remove option {n}",
+      "moveStageUp": "Move stage {n} up",
+      "moveStageDown": "Move stage {n} down",
+      "moveOptionUp": "Move option {n} up",
+      "moveOptionDown": "Move option {n} down",
+      "movedStage": "Stage moved to position {n} of {total}.",
+      "movedOption": "Option moved to position {n} of {total}.",
+      "removedStage": "Stage removed.",
+      "removedOption": "Option removed.",
+      "addedStage": "Stage {n} added.",
+      "addedOption": "Option {n} added.",
+      "removeStageTitle": "Remove stage {n}?",
+      "removeStageDescription": "Its question and options are removed when you save the scenario.",
+      "noStages": "No stages yet. Add the first stage of the situation.",
+      "expandAll": "Expand all stages",
+      "collapseAll": "Collapse all stages",
+      "summaryOptions": "{count, plural, =0 {No options} one {1 option} other {{n} options}}",
+      "summaryCorrect": "{count, plural, =0 {no correct option} one {1 correct} other {{n} correct}}",
+      "summaryInvalid": "Needs attention",
+      "summaryNoPrompt": "No question yet",
+      "maxStages": "A scenario has at most {max} stages.",
+      "maxOptions": "A stage has at most {max} options.",
+      "save": "Save changes",
+      "saving": "Saving…",
+      "saved": "Changes saved.",
+      "unsaved": "Unsaved changes",
+      "upToDate": "All changes saved",
+      "invalid": "Some fields need attention. The first one is selected.",
+      "protocolChanged": "The protocol changed, so the step links of {count, plural, one {1 option} other {{n} options}} were cleared.",
+      "liveWarning": "This scenario is published: the changes you save are live for trainees at once.",
+      "previewSaved": "The preview plays the last saved version.",
+      "protocolUnpublished": "Its protocol is not published, so trainees cannot see this scenario even when it is published.",
+      "leaveWarning": "You have unsaved changes."
+    },
+    "locked": {
+      "title": "Locked: trainees have attempted this version",
+      "description": "{count, plural, one {1 attempt uses} other {{n} attempts use}} this version. It is never edited in place, so every past result can still be explained. To change it, create a new version: you edit the copy and publish it, and this version is unpublished at the same time.",
+      "createVersion": "Create a new version",
+      "creating": "Creating…",
+      "draftExists": "A draft of the next version already exists.",
+      "openVersion": "Open version {n}",
+      "content": "Content of this version",
+      "correct": "Correct",
+      "wrong": "Wrong",
+      "noStep": "Not linked to a step"
+    },
+    "versions": {
+      "title": "Versions",
+      "current": "this page",
+      "attempts": "{count, plural, =0 {no attempts} one {1 attempt} other {{n} attempts}}"
+    },
+    "actions": {
+      "preview": "Preview as a trainee",
+      "publish": "Publish",
+      "publishing": "Publishing…",
+      "publishTitle": "Publish this scenario?",
+      "publishDescription": "Trainees who can see its protocol can play it at once.",
+      "publishReplaces": "{count, plural, one {Version {versions} is unpublished at the same time.} other {Versions {versions} are unpublished at the same time.}}",
+      "publishAbandons": "{count, plural, one {1 attempt still in progress on the old version is closed as unfinished; whoever comes back starts this version from the first stage.} other {{n} attempts still in progress on the old versions are closed as unfinished; whoever comes back starts this version from the first stage.}}",
+      "published": "Scenario published.",
+      "publishSaveFirst": "Save your changes before publishing.",
+      "unpublish": "Unpublish",
+      "unpublishing": "Unpublishing…",
+      "unpublishTitle": "Unpublish this scenario?",
+      "unpublishDescription": "It leaves the catalogue. Past results stay available.",
+      "unpublishInProgress": "{count, plural, one {1 attempt is in progress and cannot be finished while the scenario is unpublished.} other {{n} attempts are in progress and cannot be finished while the scenario is unpublished.}}",
+      "unpublished": "Scenario unpublished.",
+      "delete": "Delete draft",
+      "deleting": "Deleting…",
+      "deleteTitle": "Delete this draft?",
+      "deleteDescription": "The draft and its stages are deleted for good. This cannot be undone.",
+      "deleted": "Draft deleted.",
+      "versionCreated": "Version {n} created. Edit it, then publish it.",
+      "versionExists": "Version {n} is already a draft: it is open now."
+    },
+    "issues": {
+      "singleNeedsOneCorrect": "A one-answer stage needs exactly one correct option.",
+      "multiNeedsCorrect": "Mark at least one option as correct.",
+      "needsTwoOptions": "A stage needs at least two options.",
+      "criticalMustBeWrong": "Only a wrong option can be a critical mistake.",
+      "criticalNeedsStep": "Link a critical mistake to the protocol step it breaks.",
+      "stepNotInProtocol": "Choose a step of this scenario's protocol.",
+      "slugVersionSuffix": "The address cannot end with a version number such as -v2 (reserved for versions).",
+      "needsStage": "Add at least one stage before publishing."
+    },
+    "errors": {
+      "generic": "Something went wrong. Please try again.",
+      "network": "Could not reach the server. Check your connection and try again.",
+      "forbidden": "Only platform admins can change scenarios.",
+      "notFound": "This scenario no longer exists.",
+      "stale": "Someone else changed this scenario after you opened it. Reload the page to see the latest version (your changes are not saved).",
+      "hasAttempts": "A trainee has just started this scenario, so it is now locked. Reload the page and create a new version instead.",
+      "slugTaken": "Another scenario already uses this address.",
+      "protocolNotAllowed": "This protocol cannot be used for this owner.",
+      "organizationNotFound": "This institution no longer exists.",
+      "invalidContent": "The saved content does not meet the rules. Open the editor and fix it first.",
+      "cannotPublish": "This scenario cannot be published yet.",
+      "notDraft": "Only an unpublished draft that nobody has attempted can be deleted.",
+      "invalid": "Some fields need attention.",
+      "reload": "Reload the page"
+    },
+    "preview": {
+      "banner": "Preview as a trainee: nothing you choose here is saved, and no attempt is recorded.",
+      "back": "Back to the editor",
+      "again": "Play the preview again",
+      "unpublished": "This scenario is not published: trainees cannot see it yet.",
+      "resultTitle": "Preview result",
+      "resultDescription": "This is what a trainee would see after these choices."
+    }
+  }
+}

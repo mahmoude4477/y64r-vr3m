@@ -1,0 +1,255 @@
+{
+  "title": "Reports",
+  "description": "Your results and compliance reports.",
+  "views": {
+    "label": "Report type",
+    "institution": "Institution report",
+    "personal": "My results"
+  },
+  "common": {
+    "noScore": "No score",
+    "percent": "{value}%"
+  },
+  "filters": {
+    "label": "Report filters",
+    "presets": "Quick range",
+    "preset30": "Last 30 days",
+    "preset90": "Last 90 days",
+    "preset365": "Last 12 months",
+    "from": "From",
+    "to": "To",
+    "protocol": "Protocol",
+    "allProtocols": "All protocols",
+    "department": "Department",
+    "allDepartments": "All departments",
+    "period": "Trend grouping",
+    "periodAuto": "Automatic",
+    "week": "weekly",
+    "month": "monthly",
+    "apply": "Apply",
+    "reset": "Reset",
+    "applying": "Updating the report…",
+    "summary": "Results from {from} to {to}, trend shown {period}.",
+    "range": "{from} to {to}",
+    "updated": "Report updated."
+  },
+  "kpi": {
+    "label": "Period summary",
+    "overall": "Overall compliance",
+    "results": "{count, plural, =0 {No results} one {From # result} other {From # results}}",
+    "scans": "Finalized scans",
+    "simulations": "Completed simulations",
+    "noAverage": "No average yet",
+    "average": "Average {score}",
+    "averageAndTrainees": "Average {score} · {count, plural, =0 {no trainees} one {# trainee} other {# trainees}}",
+    "highRisk": "High-risk results",
+    "share": "{value} of all results"
+  },
+  "trend": {
+    "title": "Compliance trend",
+    "description": "Average score per period for finalized scans, completed simulations and both together.",
+    "chartLabel": "Line chart of the average compliance score over time. The same values are in the data table below.",
+    "combined": "Overall",
+    "scans": "Scans",
+    "simulations": "Simulations",
+    "weekOf": "Week of {date}",
+    "showTable": "Show the data as a table",
+    "tableCaption": "Average compliance score per period",
+    "columns": {
+      "period": "Period",
+      "combined": "Overall",
+      "scans": "Scans (count)",
+      "simulations": "Simulations (count)"
+    },
+    "cell": "{score} ({count})"
+  },
+  "risk": {
+    "title": "Risk distribution",
+    "description": "The share of each risk level among the period's results.",
+    "scans": "Finalized scans",
+    "simulations": "Completed simulations",
+    "total": "{count, plural, =0 {No results} one {# result} other {# results}}",
+    "tableCaption": "Number and share of results by risk level",
+    "level": "Risk level"
+  },
+  "gaps": {
+    "title": "Top gaps",
+    "description": "The most violated steps across scans and simulations, each with a scenario to train it.",
+    "none": "No violations were recorded in this period.",
+    "missed": "Violation rate {rate} ({violated} of {assessed})",
+    "sources": "<pair>Scans: {scans}</pair> · <pair>Simulations: {simulations}</pair>",
+    "train": "Suggested scenario:",
+    "noScenario": "No published scenario trains this protocol yet.",
+    "showMore": "{count, plural, one {Show # more gap} other {Show # more gaps}}"
+  },
+  "breakdown": {
+    "combined": "Compliance",
+    "scans": "Scans",
+    "simulations": "Simulations",
+    "countAverage": "count · average",
+    "highRisk": "High risk",
+    "cell": "{count} · {score}"
+  },
+  "byProtocol": {
+    "title": "By protocol",
+    "description": "Weakest first. A simulation counts for the protocol its scenario trains.",
+    "none": "No results in this period.",
+    "tableCaption": "Compliance by protocol",
+    "protocol": "Protocol"
+  },
+  "byDepartment": {
+    "title": "By department",
+    "description": "Scans count for their department; simulations count for the trainee's current departments.",
+    "tableCaption": "Compliance by department",
+    "department": "Department",
+    "none": "No department",
+    "noDepartments": "The institution has no departments yet.",
+    "manage": "Manage departments",
+    "empty": "No results in this period."
+  },
+  "trainees": {
+    "title": "Trainee progress",
+    "description": "Each trainee's attempts in the selected period, their average and latest score, and the steps they miss most.",
+    "none": "The institution has no trainees yet.",
+    "invite": "Invite members",
+    "tableCaption": "Trainee progress",
+    "trainee": "Trainee",
+    "attempts": "Attempts",
+    "attemptsCount": "{count, plural, =0 {No attempts} one {# attempt} other {# attempts}}",
+    "average": "Average",
+    "latest": "Latest result",
+    "weakAreas": "Weak areas",
+    "noAttempts": "No attempts in this period",
+    "pages": "Trainee pages",
+    "printCap": "The printed report shows {shown} of {total, plural, one {# trainee} other {# trainees}}; the rest are on the reports page.",
+    "noneInDepartment": "No trainees in this department."
+  },
+  "institution": {
+    "emptyTitle": "No results yet",
+    "emptyDescription": "Institution analytics appear here once examiners finalize a first smart scan or trainees complete a first simulation.",
+    "startScan": "New scan",
+    "openSimulations": "Simulations",
+    "noMatchTitle": "No matching results",
+    "noMatchDescription": "No finalized scans or completed simulations match this period and these filters. Try a longer period or remove a filter.",
+    "clearFilters": "Clear filters",
+    "method": "Scans and simulations share one scoring model. Results that could not be assessed are left out of averages but shown in the risk distribution. Dates are in Saudi time; weeks start on Sunday."
+  },
+  "export": {
+    "scans": "Finalized scans",
+    "attempts": "Completed simulation attempts",
+    "note": "A spreadsheet file (CSV) that opens in Excel, with the current filters, newest first, up to 10,000 rows.",
+    "noDepartment": "No department",
+    "columns": {
+      "finalizedAt": "Finalized at",
+      "completedAt": "Completed at",
+      "area": "Area",
+      "protocol": "Protocol",
+      "scenario": "Scenario",
+      "department": "Department",
+      "examiner": "Examiner",
+      "trainee": "Trainee",
+      "score": "Score",
+      "risk": "Risk level",
+      "minutes": "Duration (minutes)",
+      "id": "ID"
+    },
+    "preparing": "Preparing “{name}”…",
+    "ready": "{count, plural, =0 {Downloaded: the file has no rows for this period.} one {Downloaded: # row.} other {Downloaded: # rows.}}",
+    "truncated": "Downloaded, but only the newest {count} rows. Choose a shorter period to export the rest.",
+    "truncatedNote": "This file holds only the newest {count} rows. To export older results, choose a shorter period on the reports page.",
+    "errors": {
+      "tooMany": "You reached this hour’s export limit. Try again in {minutes, plural, one {# minute} other {# minutes}}.",
+      "signedOut": "Your session has ended. Sign in again, then export again.",
+      "forbidden": "You can no longer export this institution’s reports.",
+      "failed": "The file could not be prepared right now. Please try again in a moment.",
+      "network": "The server could not be reached. Check your connection and try again."
+    }
+  },
+  "print": {
+    "title": "Institution compliance report",
+    "description": "A print-ready copy of the institution report with the current filters.",
+    "back": "Back to reports",
+    "hint": "To keep a copy, choose “Save as PDF” in the print dialog.",
+    "details": "Report details",
+    "institution": "Institution",
+    "period": "Period",
+    "generated": "Generated",
+    "noData": "No data in this period.",
+    "gaps": "Top gaps",
+    "byProtocol": "Compliance by protocol",
+    "byDepartment": "Compliance by department",
+    "trainees": "Trainee progress",
+    "open": "Print view"
+  },
+  "pager": {
+    "previous": "Previous",
+    "next": "Next",
+    "status": "Page {page} of {pages}"
+  },
+  "personal": {
+    "emptyTitle": "You have not completed a simulation yet",
+    "emptyTitleStaff": "No completed simulations",
+    "emptyDescription": "Start your first training scenario. Your scores, your progress and the steps to review will appear here.",
+    "emptyDescriptionStaff": "This trainee has not completed a simulation in the institution yet.",
+    "emptyInProgress": "{count, plural, =0 {} one {One attempt is still in progress.} other {# attempts are still in progress.}}",
+    "browse": "Browse simulations",
+    "kpi": {
+      "label": "Results summary",
+      "completed": "Simulations you completed",
+      "completedStaff": "Completed simulations",
+      "inProgress": "{count, plural, one {# attempt in progress} other {# attempts in progress}}",
+      "average": "Average score",
+      "best": "Best score",
+      "latest": "Latest result"
+    },
+    "trend": {
+      "title": "Score trend",
+      "description": "Your score in your latest completed attempts, up to 20.",
+      "descriptionStaff": "The trainee’s score in their latest completed attempts in the institution, up to 20.",
+      "descriptionShort": "The chart appears after at least two completed attempts.",
+      "chartLabel": "Line chart of completed attempt scores in time order. The same values are in the data table below.",
+      "series": "Score",
+      "showTable": "Show the data as a table",
+      "tableCaption": "Scores of completed attempts",
+      "needMore": "Complete one more attempt to see your progress.",
+      "columns": {
+        "date": "Date",
+        "scenario": "Scenario",
+        "score": "Score"
+      }
+    },
+    "weak": {
+      "title": "Steps to review",
+      "description": "The steps you missed most in simulations, why they matter and a scenario to practice them.",
+      "descriptionStaff": "The steps this trainee missed most in simulations, with a suggested scenario.",
+      "none": "No violations in completed attempts. Well done!",
+      "missed": "Violation rate {rate}: {assessed, plural, =1 {in the only attempt} one {in {violated} of # attempt} other {in {violated} of # attempts}}",
+      "why": "Why it matters:",
+      "practice": "Practice it: {title}",
+      "noScenario": "No published scenario trains this protocol yet."
+    },
+    "history": {
+      "title": "Attempt history",
+      "description": "{count, plural, =0 {No attempts} one {# attempt} other {# attempts}}, newest first.",
+      "tableCaption": "Simulation attempt history",
+      "scenario": "Scenario",
+      "date": "Date",
+      "result": "Result",
+      "duration": "Duration",
+      "minutes": "{count, plural, =0 {Under a minute} one {# minute} other {# minutes}}",
+      "pages": "Attempt history pages"
+    }
+  },
+  "trainee": {
+    "metaTitle": "Trainee results",
+    "back": "Back to reports",
+    "formerMember": "No longer a member",
+    "noDepartment": "No department",
+    "scopeNote": "This page shows only the attempts this trainee made in your institution."
+  },
+  "critical": {
+    "step": "Critical step",
+    "violation": "Critical violation",
+    "violations": "{count, plural, one {# critical violation} other {# critical violations}}"
+  }
+}

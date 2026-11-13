@@ -1,0 +1,332 @@
+{
+  "title": "Institution",
+  "description": "Your institution's details, members and departments.",
+  "noRole": "No role",
+  "nav": {
+    "label": "Institution pages",
+    "overview": "Overview"
+  },
+  "suspended": {
+    "title": "This institution is suspended",
+    "description": "The Waqaya platform administration has temporarily suspended {org}. Its data is kept, but its pages cannot be viewed or changed until the suspension is lifted.",
+    "hint": "Choose another institution or your individual account in Settings"
+  },
+  "overview": {
+    "yourRole": "Your role",
+    "since": "On Waqaya since {date}",
+    "nameEn": "English name",
+    "noNameEn": "No English name yet",
+    "noType": "Institution type not set",
+    "edit": "Edit details",
+    "statsLabel": "Institution figures",
+    "stats": {
+      "members": "Members",
+      "departments": "Departments",
+      "pendingInvitations": "Pending invitations",
+      "staff": "Examiners and managers"
+    },
+    "composition": {
+      "title": "Members by role",
+      "description": "How the institution's members are spread across roles.",
+      "share": "{percent} of members"
+    },
+    "setup": {
+      "title": "Set up your institution",
+      "description": "Three short steps to get your team working on Waqaya.",
+      "progress": "{done} of {total} done",
+      "doneLabel": "Done",
+      "todoLabel": "Not done yet",
+      "details": {
+        "title": "Complete the institution's details",
+        "description": "Set the institution type, and add its English name if someone on your team uses Waqaya in English.",
+        "action": "Edit details"
+      },
+      "invite": {
+        "title": "Invite your team",
+        "description": "Send invitations to examiners and trainees.",
+        "action": "Invite members"
+      },
+      "departments": {
+        "title": "Create departments",
+        "description": "Group members into departments such as the emergency room or intensive care.",
+        "action": "Create a department"
+      }
+    },
+    "links": {
+      "label": "Manage the institution",
+      "labelView": "About the institution",
+      "membersManage": "Add members, change their roles and follow invitations.",
+      "membersView": "Browse the institution's members and their roles.",
+      "departmentsManage": "Create departments and assign members to them.",
+      "departmentsView": "Browse the institution's departments and their members.",
+      "protocols": "Customize your institution's protocols or copy them from the global ones."
+    }
+  },
+  "profile": {
+    "title": "Edit institution details",
+    "description": "Members see the name in lists, reports and invitations.",
+    "name": "Institution name in Arabic",
+    "nameEn": "Institution name in English",
+    "nameEnHint": "Optional. Shown to people who use Waqaya in English.",
+    "type": "Institution type",
+    "typePlaceholder": "Choose the institution type",
+    "submit": "Save changes",
+    "saving": "Saving…",
+    "saved": "Institution details saved"
+  },
+  "roleDescriptions": {
+    "owner": "Full control, including adding or removing other owners.",
+    "admin": "Manages members, invitations, departments and institution protocols.",
+    "examiner": "Runs smart scans, reviews their results and sees institution reports.",
+    "trainee": "Trains with simulations and sees only their own results."
+  },
+  "members": {
+    "description": "The institution's members, their roles and departments.",
+    "listTitle": "Institution members",
+    "count": "{count, plural, =0 {No members} one {1 member} other {{n} members}}",
+    "filteredCount": "Showing {shown} of {total}",
+    "search": "Search members",
+    "searchPlaceholder": "Search by name or email",
+    "roleFilter": "Role",
+    "allRoles": "All roles",
+    "you": "You",
+    "joined": "Joined {date}",
+    "noDepartment": "No department",
+    "departmentsLabel": "Departments",
+    "readOnly": "You can view the member list. The institution's owners and admins manage members.",
+    "noResults": "No members match your search.",
+    "clearFilters": "Clear search",
+    "showMore": "Show more",
+    "actions": "Actions for {name}",
+    "changeRoleAction": "Change role",
+    "removeAction": "Remove from institution",
+    "blocked": {
+      "owner_only": "Only an owner can change an owner's role.",
+      "last_owner": "The institution needs at least one owner."
+    },
+    "changeRole": {
+      "title": "Change {name}'s role",
+      "description": "The role decides what the member sees and can do in the institution.",
+      "legend": "New role",
+      "current": "current",
+      "selfWarning": "You are changing your own role. After saving you can no longer manage members; the institution pages stay open to you, read-only.",
+      "selfWarningTrainee": "You are changing your own role. Trainees do not see the institution pages, so after saving this page closes and the dashboard opens.",
+      "submit": "Save role",
+      "saving": "Saving…",
+      "success": "{name} is now: {role}"
+    },
+    "remove": {
+      "title": "Remove {name} from the institution?",
+      "description": "The member loses access to the institution's data and departments right away. The scans they ran stay in the institution's records, and you can invite them again later.",
+      "confirm": "Remove member",
+      "removing": "Removing…",
+      "success": "{name} was removed from the institution"
+    }
+  },
+  "invite": {
+    "button": "Invite member",
+    "title": "Invite a member to the institution",
+    "description": "We email a link that lets the person join the institution with the role you choose. The invitation stays valid for {days, plural, =0 {less than a day} one {1 day} other {{n} days}}.",
+    "email": "Email",
+    "emailHint": "The person must sign in or sign up with this same address.",
+    "role": "Role",
+    "department": "Department",
+    "departmentNone": "No department",
+    "departmentHint": "Optional. The member joins the department when they accept.",
+    "noDepartments": "No departments yet. You can create them on the Departments page.",
+    "emailOff": "Email is turned off on this server, so the invitation email will not arrive. Copy the link once the invitation is created and send it yourself.",
+    "submit": "Send invitation",
+    "submitOff": "Create invitation",
+    "submitting": "Sending…",
+    "sentTitle": "Invitation sent",
+    "sentDescription": "We emailed the invitation to <addr>{email}</addr>. If it does not arrive, copy the link and send it yourself.",
+    "createdTitle": "Invitation created",
+    "createdDescription": "Copy the link and send it to <addr>{email}</addr> yourself: email is turned off on this server.",
+    "link": "Invitation link",
+    "linkHint": "The link works only for the owner of this address.",
+    "another": "Invite someone else",
+    "done": "Done"
+  },
+  "invitations": {
+    "title": "Pending invitations",
+    "description": "Invitations that have not been accepted yet.",
+    "empty": "No pending invitations.",
+    "staleTitle": "Need a new invitation",
+    "staleDescription": "These invitations can no longer be accepted. Send a new invitation or cancel it.",
+    "invitedBy": "Sent by {name} · {date}",
+    "invitedOn": "Sent on {date}",
+    "expires": "Valid until {date}",
+    "expired": "Expired",
+    "inviterGone": "The sender has left the institution",
+    "invalidRole": "Role not available in Waqaya",
+    "actions": "Actions for the invitation to {email}",
+    "copyLink": "Copy link",
+    "copied": "Invitation link copied",
+    "copyFailed": "Could not copy automatically. Select the link and copy it yourself.",
+    "resend": "Resend email",
+    "extend": "Extend validity",
+    "resent": "Invitation resent and extended",
+    "resentOff": "Invitation extended. Email is off, so copy the link and send it yourself.",
+    "sendAgain": "Send a new invitation",
+    "sentAgain": "New invitation sent",
+    "sentAgainOff": "New invitation created. Copy its link and send it yourself.",
+    "cancel": "Cancel invitation",
+    "cancelTitle": "Cancel the invitation to {email}?",
+    "cancelDescription": "The invitation link stops working once it is canceled. You can send a new invitation later.",
+    "cancelConfirm": "Cancel invitation",
+    "canceling": "Canceling…",
+    "canceled": "Invitation canceled",
+    "keep": "Keep invitation",
+    "ownerOnly": "Only an owner manages owner invitations."
+  },
+  "departments": {
+    "description": "The institution's departments and their members, such as the emergency room, intensive care or the laboratory.",
+    "listTitle": "Institution departments",
+    "create": "New department",
+    "createTitle": "Create a department",
+    "createDescription": "Create the department, then add the institution's members to it.",
+    "name": "Department name",
+    "namePlaceholder": "e.g. Emergency department",
+    "duplicate": "A department with this name already exists.",
+    "creating": "Creating…",
+    "created": "Department created: {name}",
+    "renameAction": "Rename",
+    "renameTitle": "Rename department",
+    "renaming": "Saving…",
+    "renamed": "Department renamed to {name}",
+    "deleteAction": "Delete department",
+    "lastBlocked": "An institution's only department cannot be deleted. Create another department first, or rename this one.",
+    "deleteTitle": "Delete {name}?",
+    "deleteDescription": "Its members stay in the institution with their roles; only the department is deleted. Invitations that name this department stay valid without a department.",
+    "deleteConfirm": "Delete department",
+    "deleting": "Deleting…",
+    "deleted": "Department deleted: {name}",
+    "manageAction": "Manage members",
+    "manageTitle": "Members of {name}",
+    "manageDescription": "Add the institution's members to this department or remove them from it.",
+    "memberCount": "{count, plural, =0 {No members} one {1 member} other {{n} members}}",
+    "count": "{count, plural, =0 {No departments} one {1 department} other {{n} departments}}",
+    "since": "Created {date}",
+    "noMembers": "No members in this department yet.",
+    "inDepartment": "In the department",
+    "addMembers": "Add members",
+    "addSearch": "Search for a member to add",
+    "addEmpty": "No matching members.",
+    "allIn": "Every member of the institution is in this department.",
+    "add": "Add {name}",
+    "added": "{name} was added to the department",
+    "removeMember": "Remove {name} from the department",
+    "removeShort": "Remove",
+    "removedMember": "{name} was removed from the department",
+    "moreMembers": "and {n} more",
+    "actions": "Actions for {name}",
+    "readOnly": "You can view the departments. The institution's owners and admins create and manage them.",
+    "emptyTitle": "No departments yet",
+    "emptyManager": "Create the first department to organize the institution's members and follow each department's results.",
+    "emptyViewer": "The institution's managers have not created departments yet."
+  },
+  "invitePage": {
+    "role": "Role",
+    "department": "Department",
+    "invitedBy": "Sent by",
+    "validUntil": "Valid until",
+    "validUntilValue": "{date} at {time}",
+    "dashboard": "Go to the dashboard",
+    "open": {
+      "title": "Join {org}",
+      "description": "{inviter} invited you to join this institution on Waqaya.",
+      "descriptionNoInviter": "You were invited to join this institution on Waqaya.",
+      "accept": "Accept invitation",
+      "accepting": "Accepting…",
+      "decline": "Decline invitation",
+      "declineTitle": "Decline the invitation?",
+      "declineDescription": "You will not join {org}, and this link stops working once you decline. The institution can send you a new invitation later.",
+      "declineConfirm": "Decline invitation",
+      "declining": "Declining…",
+      "keep": "Go back",
+      "accepted": "You joined {org}",
+      "declined": "You declined the invitation"
+    },
+    "signIn": {
+      "title": "Sign in to accept the invitation",
+      "description": "Sign in or create an account with <addr>{email}</addr>, and you will come back to this page.",
+      "signIn": "Sign in",
+      "signUp": "Create account"
+    },
+    "wrongAccount": {
+      "title": "This invitation is for another account",
+      "description": "The invitation was sent to <addr>{email}</addr>, and you are signed in as <addr>{current}</addr>.",
+      "hint": "Sign out, then sign in with the address that received the invitation, and you will come back to this page.",
+      "switch": "Use another account",
+      "switching": "Signing out…"
+    },
+    "alreadyMember": {
+      "title": "You are a member of {org}",
+      "description": "You do not need this invitation: you are already a member of the institution.",
+      "open": "Open the institution",
+      "opening": "Opening…"
+    },
+    "accepted": {
+      "title": "This invitation was already used",
+      "description": "Your invitation to {org} was accepted before. If you need to join again, ask the institution's managers for a new invitation."
+    },
+    "rejected": {
+      "title": "This invitation was declined",
+      "description": "You will not join {org} through this link. If you change your mind, ask the institution's managers for a new invitation."
+    },
+    "canceled": {
+      "title": "This invitation was canceled",
+      "description": "Your invitation to {org} was canceled. Contact the institution if you expected to join."
+    },
+    "expired": {
+      "title": "This invitation has expired",
+      "description": "Invitations expire after a set time. Ask the managers of {org} for a new one."
+    },
+    "noLongerValid": {
+      "title": "This invitation is no longer valid",
+      "description": "The person who sent it is no longer a member of {org}. Ask the institution's managers for a new invitation."
+    },
+    "suspended": {
+      "title": "The institution is temporarily suspended",
+      "description": "The platform administration has temporarily suspended {org}, so the invitation cannot be accepted right now. Try again later."
+    },
+    "invalidRole": {
+      "title": "This invitation cannot be accepted",
+      "description": "The role in this invitation is not available in Waqaya. Ask the managers of {org} for a new invitation."
+    },
+    "unknown": {
+      "title": "We could not find this invitation",
+      "description": "Make sure you copied the whole link from the invitation email, or ask the institution for a new invitation."
+    }
+  },
+  "errors": {
+    "generic": "The request could not be completed. Please try again.",
+    "network": "Could not reach the server. Check your connection and try again.",
+    "rateLimited": "Too many requests in a short time. Wait a minute and try again.",
+    "sessionExpired": "Your session has ended. Sign in again and retry.",
+    "lockBusy": "Another change is in progress. Try again in a moment.",
+    "suspended": "This institution is suspended by the platform administration, so it cannot be changed right now.",
+    "mustChangePassword": "Set a new password first.",
+    "deletionBlocked": "This cannot be done right now. Make another member an owner of the institution first.",
+    "lastOwner": "The institution needs at least one owner. Make another member an owner first.",
+    "notAllowed": "You do not have permission to do this.",
+    "ownerRoleOnly": "Only an owner can give or take away the owner role.",
+    "alreadyMember": "The person with this address is already a member of the institution.",
+    "alreadyInvited": "An invitation was already sent to this address.",
+    "invitationLimit": "The institution has reached the limit of pending invitations. Cancel some, then try again.",
+    "membershipLimit": "The institution has reached its member limit.",
+    "invalidEmail": "The email address is not valid.",
+    "memberNotFound": "We could not find this member; they may have been removed. Refresh the page.",
+    "departmentNotFound": "We could not find this department; it may have been deleted. Refresh the page.",
+    "lastDepartment": "The institution's only department cannot be deleted. Create another one first, or rename this one.",
+    "departmentInUse": "You cannot delete this department right now. Refresh the page and try again.",
+    "notInDepartment": "This member is not in the department.",
+    "invitationNotFound": "The invitation is not valid: it may have expired or been used already.",
+    "notRecipient": "This invitation was sent to another address.",
+    "verifyEmailFirst": "Verify your email address first, then accept the invitation.",
+    "organizationNotFound": "We could not find this institution.",
+    "roleNotFound": "This role is not available.",
+    "invalidInput": "Some of the values are not valid. Check them and try again.",
+    "departmentNameTaken": "There is already a department with this name in the institution."
+  }
+}

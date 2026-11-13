@@ -1,0 +1,7 @@
+# core.autocrlf=true on the dev machine: keep migration files byte-identical (Prisma checksums them)
+prisma/migrations/** text eol=lf
+*.prisma text eol=lf
+messages/**/*.json text eol=lf
+# shell scripts and Dockerfiles run in Linux containers: a CRLF checkout breaks `set -eu` on line 1 (ops/db-backup)
+*.sh text eol=lf
+Dockerfile text eol=lf

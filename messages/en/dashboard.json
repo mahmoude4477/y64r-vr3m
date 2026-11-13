@@ -1,0 +1,163 @@
+{
+  "title": "Dashboard",
+  "description": "A quick look at the latest results and what to do next.",
+  "welcome": {
+    "greeting": "Welcome, <who>{name}</who>",
+    "greetingNoName": "Welcome",
+    "personal": "Your individual training",
+    "personalMember": "Your training at {institution}",
+    "staff": "{role} · {institution}"
+  },
+  "quick": {
+    "label": "Quick actions",
+    "newScan": "New scan",
+    "reports": "Reports",
+    "simulations": "Simulations",
+    "members": "Members",
+    "startSimulation": "Start a simulation",
+    "myResults": "My results",
+    "protocols": "Protocols"
+  },
+  "admin": {
+    "title": "Platform administration",
+    "description": "Users, institutions, global protocols and scenarios, AI settings and the audit log.",
+    "open": "Open the admin panel"
+  },
+  "error": {
+    "description": "This section could not be loaded right now.",
+    "retry": "Try again"
+  },
+  "continue": {
+    "title": "You have an unfinished simulation",
+    "description": "{title} · started on {date}",
+    "action": "Continue"
+  },
+  "onboarding": {
+    "title": "Welcome to Waqaya",
+    "description": "Practice infection-control decisions in realistic hospital situations. Every choice is checked against protocol steps based on WHO and CDC guidance, and your result shows exactly what to review.",
+    "stepsLabel": "How it works",
+    "step1Title": "Choose a scenario",
+    "step1": "A blood spill, a used needle, a hand-hygiene station and more.",
+    "step2Title": "Decide at every stage",
+    "step2": "Each choice maps to a step of the protocol.",
+    "step3Title": "Learn from your result",
+    "step3": "Your score, every mistake explained, and what to practice next.",
+    "start": "Start your first simulation",
+    "browse": "Browse simulations",
+    "protocols": "Read the protocols",
+    "suggested": "Suggested first scenario"
+  },
+  "scenario": {
+    "minutes": "{count, plural, one {# minute} other {# minutes}}",
+    "meta": "{difficulty} · {minutes}"
+  },
+  "personal": {
+    "statsLabel": "Your results",
+    "latest": "Latest result",
+    "latestOpen": "View result",
+    "changeUp": "{points, plural, one {# point} other {# points}} up on your previous attempt",
+    "changeDown": "{points, plural, one {# point} other {# points}} down on your previous attempt",
+    "changeSame": "Same score as your previous attempt",
+    "recentScores": "{count, plural, one {Your latest score} other {Your last # scores}}, oldest first: {scores}",
+    "completed": "Completed simulations",
+    "inProgress": "{count, plural, one {# attempt in progress} other {# attempts in progress}}",
+    "average": "Average score",
+    "best": "Best score",
+    "next": {
+      "title": "Recommended next",
+      "fromGap": "Practice the step you miss most.",
+      "missed": "{assessed, plural, =1 {You missed “{step}” in your only attempt.} one {You missed “{step}” in {violated} of # attempt.} other {You missed “{step}” in {violated} of # attempts.}}",
+      "untried": "A scenario you have not completed yet.",
+      "start": "Start the scenario",
+      "allDone": "You have completed every available scenario. Repeat one to keep your skills sharp.",
+      "browse": "Browse simulations"
+    },
+    "weak": {
+      "title": "Steps to review",
+      "description": "The steps you missed most in your completed simulations.",
+      "none": "No mistakes in your completed simulations. Well done!",
+      "rate": "{assessed, plural, =1 {Missed in your only attempt} one {Missed in {violated} of # attempt} other {Missed in {violated} of # attempts}}",
+      "practise": "Practice: {title}",
+      "all": "All my results"
+    }
+  },
+  "institution": {
+    "month": {
+      "title": "This month",
+      "description": "{from} to {to} · finalized scans and completed simulations",
+      "report": "Open the report",
+      "compliance": "Compliance",
+      "results": "{count, plural, =0 {No results yet this month} one {From # result} other {From # results}}",
+      "changeUp": "{points, plural, one {# point} other {# points}} up on last month",
+      "changeDown": "{points, plural, one {# point} other {# points}} down on last month",
+      "changeSame": "Same as last month",
+      "lastMonth": "Last month: {score}",
+      "highRisk": "High-risk results",
+      "highRiskShare": "{share} of this month’s results",
+      "scans": "Finalized scans",
+      "simulations": "Completed simulations",
+      "average": "Average {score}",
+      "averageAndTrainees": "Average {score} · {count, plural, one {# trainee} other {# trainees}}",
+      "noAverage": "No average yet"
+    },
+    "open": {
+      "title": "Scans waiting to be finalized",
+      "description": "Finish reviewing these scans so that they count in the reports.",
+      "all": "All scans",
+      "none": "No scan is waiting to be finalized.",
+      "statusLabel": "Open scans by status",
+      "byYou": "Started by you",
+      "by": "Started by {name}",
+      "updated": "Updated {date}",
+      "more": "{count, plural, one {# more open scan} other {# more open scans}}"
+    },
+    "gap": {
+      "title": "Top gap",
+      "description": "The most violated step in the last 90 days, with the training for it.",
+      "none": "No violations were recorded in the last 90 days.",
+      "rate": "Violated in {rate} of checks ({violated} of {assessed})",
+      "why": "Why it matters:",
+      "train": "Recommended training",
+      "noScenario": "No published scenario trains this protocol yet.",
+      "also": "Also frequent",
+      "all": "All gaps in the report",
+      "alsoRate": "Violation rate {rate}"
+    },
+    "scans": {
+      "title": "Latest finalized scans",
+      "all": "All finalized scans",
+      "none": "No scan has been finalized yet.",
+      "noDepartment": "No department"
+    },
+    "attempts": {
+      "title": "Latest simulation results",
+      "all": "Trainee progress",
+      "none": "No one has completed a simulation in the institution yet."
+    },
+    "invite": {
+      "title": "Invite your team",
+      "description": "{count, plural, one {Your institution has one member.} other {Your institution has # members.}} Invite examiners and trainees so that their scans and training results appear here.",
+      "pending": "{count, plural, one {One invitation is waiting for an answer.} other {# invitations are waiting for an answer.}}",
+      "action": "Invite members"
+    },
+    "onboarding": {
+      "title": "Start measuring compliance",
+      "description": "Results, trends and gaps appear here after the first finalized scan or completed simulation.",
+      "stepsLabel": "First steps",
+      "inviteTitle": "Invite your team",
+      "invite": "Add examiners who run scans and trainees who train.",
+      "scanTitle": "Run a first smart scan",
+      "scan": "Photograph an area such as a sink or a sharps container. The AI checks each visible step, and the examiner reviews and finalizes the result.",
+      "trainTitle": "Train with simulations",
+      "train": "Trainees complete realistic scenarios; their scores and weak steps appear here and in the reports.",
+      "startScan": "New scan",
+      "members": "Invite members",
+      "simulations": "Simulations"
+    }
+  },
+  "tryTraining": {
+    "title": "Try simulation training",
+    "description": "Realistic infection-control scenarios in which every decision is checked against the protocol steps.",
+    "action": "Browse simulations"
+  }
+}

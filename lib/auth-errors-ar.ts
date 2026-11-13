@@ -1,0 +1,58 @@
+import type { TranslationDictionary } from "@better-auth/i18n";
+
+// The bundled `ar` dictionary covers ~34 core codes; plugin codes (email OTP, organization, admin)
+// would fall back to English without these. Full lists: node_modules/better-auth/dist/plugins/*/error-codes.mjs
+export const authErrorsAr = {
+  // email OTP
+  OTP_EXPIRED: "انتهت صلاحية الرمز. اطلب رمزًا جديدًا.",
+  INVALID_OTP: "الرمز غير صحيح.",
+  TOO_MANY_ATTEMPTS: "محاولات كثيرة. اطلب رمزًا جديدًا.",
+  // organization
+  ORGANIZATION_NOT_FOUND: "المؤسسة غير موجودة",
+  ORGANIZATION_ALREADY_EXISTS: "المؤسسة موجودة بالفعل",
+  ORGANIZATION_SLUG_ALREADY_TAKEN: "هذا المعرّف مستخدم لمؤسسة أخرى",
+  YOU_ARE_NOT_ALLOWED_TO_CREATE_A_NEW_ORGANIZATION: "لا تملك صلاحية إنشاء مؤسسة",
+  YOU_ARE_NOT_ALLOWED_TO_UPDATE_THIS_ORGANIZATION: "لا تملك صلاحية تعديل هذه المؤسسة",
+  YOU_ARE_NOT_ALLOWED_TO_DELETE_THIS_ORGANIZATION: "لا تملك صلاحية حذف هذه المؤسسة",
+  USER_IS_NOT_A_MEMBER_OF_THE_ORGANIZATION: "المستخدم ليس عضوًا في هذه المؤسسة",
+  YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION: "لست عضوًا في هذه المؤسسة",
+  USER_IS_ALREADY_A_MEMBER_OF_THIS_ORGANIZATION: "المستخدم عضو بالفعل في هذه المؤسسة",
+  USER_IS_ALREADY_INVITED_TO_THIS_ORGANIZATION: "تمت دعوة هذا المستخدم مسبقًا",
+  NO_ACTIVE_ORGANIZATION: "اختر مؤسسة أولًا",
+  MEMBER_NOT_FOUND: "العضو غير موجود",
+  ROLE_NOT_FOUND: "الدور غير موجود",
+  INVITATION_NOT_FOUND: "الدعوة غير موجودة أو منتهية",
+  YOU_ARE_NOT_THE_RECIPIENT_OF_THE_INVITATION: "هذه الدعوة ليست لك",
+  EMAIL_VERIFICATION_REQUIRED_BEFORE_ACCEPTING_OR_REJECTING_INVITATION: "تحقّق من بريدك قبل قبول الدعوة",
+  YOU_ARE_NOT_ALLOWED_TO_INVITE_USERS_TO_THIS_ORGANIZATION: "لا تملك صلاحية دعوة أعضاء",
+  YOU_ARE_NOT_ALLOWED_TO_INVITE_USER_WITH_THIS_ROLE: "لا يمكنك منح هذا الدور",
+  YOU_ARE_NOT_ALLOWED_TO_CANCEL_THIS_INVITATION: "لا تملك صلاحية إلغاء هذه الدعوة",
+  INVITER_IS_NO_LONGER_A_MEMBER_OF_THE_ORGANIZATION: "صاحب الدعوة لم يعد عضوًا في المؤسسة",
+  INVITATION_LIMIT_REACHED: "تم بلوغ الحد الأقصى للدعوات",
+  YOU_ARE_NOT_ALLOWED_TO_DELETE_THIS_MEMBER: "لا تملك صلاحية إزالة هذا العضو",
+  YOU_ARE_NOT_ALLOWED_TO_UPDATE_THIS_MEMBER: "لا تملك صلاحية تعديل هذا العضو",
+  YOU_CANNOT_LEAVE_THE_ORGANIZATION_AS_THE_ONLY_OWNER: "لا يمكن للمالك الوحيد مغادرة المؤسسة",
+  YOU_CANNOT_LEAVE_THE_ORGANIZATION_WITHOUT_AN_OWNER: "لا يمكن ترك المؤسسة بلا مالك",
+  ORGANIZATION_MEMBERSHIP_LIMIT_REACHED: "تم بلوغ الحد الأقصى لأعضاء المؤسسة",
+  TEAM_ALREADY_EXISTS: "القسم موجود بالفعل",
+  TEAM_NOT_FOUND: "القسم غير موجود",
+  YOU_ARE_NOT_ALLOWED_TO_CREATE_A_NEW_TEAM: "لا تملك صلاحية إنشاء قسم",
+  YOU_ARE_NOT_ALLOWED_TO_UPDATE_THIS_TEAM: "لا تملك صلاحية تعديل هذا القسم",
+  YOU_ARE_NOT_ALLOWED_TO_DELETE_THIS_TEAM: "لا تملك صلاحية حذف هذا القسم",
+  UNABLE_TO_REMOVE_LAST_TEAM: "لا يمكن حذف آخر قسم",
+  USER_IS_NOT_A_MEMBER_OF_THE_TEAM: "المستخدم ليس عضوًا في هذا القسم",
+  // admin
+  BANNED_USER: "تم إيقاف هذا الحساب",
+  YOU_CANNOT_BAN_YOURSELF: "لا يمكنك إيقاف حسابك",
+  YOU_CANNOT_REMOVE_YOURSELF: "لا يمكنك حذف حسابك من هنا",
+  YOU_CANNOT_IMPERSONATE_ADMINS: "لا يمكن انتحال صفة مدير",
+  YOU_ARE_NOT_ALLOWED_TO_LIST_USERS: "لا تملك صلاحية عرض المستخدمين",
+  YOU_ARE_NOT_ALLOWED_TO_CHANGE_USERS_ROLE: "لا تملك صلاحية تغيير الأدوار",
+  YOU_ARE_NOT_ALLOWED_TO_BAN_USERS: "لا تملك صلاحية إيقاف المستخدمين",
+  YOU_ARE_NOT_ALLOWED_TO_DELETE_USERS: "لا تملك صلاحية حذف المستخدمين",
+  YOU_ARE_NOT_ALLOWED_TO_IMPERSONATE_USERS: "لا تملك صلاحية انتحال صفة المستخدمين",
+  YOU_ARE_NOT_ALLOWED_TO_REVOKE_USERS_SESSIONS: "لا تملك صلاحية إنهاء جلسات المستخدمين",
+  // Waqaya gates (lib/auth-hooks.ts)
+  MUST_CHANGE_PASSWORD: "عيّن كلمة مرور جديدة أولًا",
+  ORGANIZATION_SUSPENDED: "هذه المؤسسة موقوفة، فلا يمكن تعديلها الآن",
+} satisfies TranslationDictionary;

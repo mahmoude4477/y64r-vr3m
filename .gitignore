@@ -1,0 +1,46 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+
+# testing
+/coverage
+
+# next.js (+ per-agent dist dirs: NEXT_DIST_DIR=.next-<name>)
+/.next/
+/.next-*/
+/out/
+
+# playwright (e2e)
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/.e2e/
+/e2e/.auth/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+.pnpm-debug.log*
+
+# env files (local secrets). The example file is committed.
+.env*
+!.env.example
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# generated
+/generated/prisma
+messages/**/*.d.json.ts

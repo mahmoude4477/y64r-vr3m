@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="132" height="40" viewBox="0 0 132 40" role="img" aria-label="English">
+  <title>English</title>
+  <rect x="0.75" y="0.75" width="130.5" height="38.5" rx="10" fill="#0b1f24" stroke="#2b6f77" stroke-width="1.5"/>
+  <g transform="translate(18 11) scale(0.75)" fill="none" stroke="#5fd4e0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#5fd4e0"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18z"/></g>
+  <text x="79.5" y="20" dy="0.35em" text-anchor="middle" font-family="'Segoe UI', 'Segoe UI Arabic', Tahoma, 'Noto Sans Arabic', 'Geeza Pro', 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#5fd4e0">English</text>
+</svg>

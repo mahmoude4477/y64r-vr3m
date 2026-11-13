@@ -1,0 +1,127 @@
+# CI (note 09 §2.1, docs/DEPLOY.md). Railway deploys a commit only after every workflow on it succeeded
+# ("Wait for CI"), so keep ONE workflow here and never cancel runs on the deploy branches.
+# No repository secrets: the e2e job generates its auth secret per run and never calls Anthropic, e-mail or S3.
+name: CI
+
+on:
+  push:
+    branches: [main, production] # Railway "Wait for CI" needs push runs on the deploy branches
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  # Never cancel deploy-branch runs: Railway treats a cancelled run as "not green".
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+env:
+  NEXT_TELEMETRY_DISABLED: "1"
+  PRISMA_HIDE_UPDATE_MESSAGE: "1"
+
+jobs:
+  checks:
+    name: Types, lint, unit tests, i18n, audit
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: package.json # engines.node "24.x"
+      - uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
+        with:
+          cache: true # pnpm store, keyed by pnpm-lock.yaml; version from packageManager (11.28.8)
+      - run: pnpm install --frozen-lockfile # pnpm 11 strictDepBuilds: an unlisted build script fails here (allowBuilds)
+      - run: pnpm db:generate
+      - run: pnpm typecheck
+      - run: pnpm lint --max-warnings 0
+      - run: pnpm test
+      - run: pnpm i18n:check
+      - name: Dependency audit (production dependencies, fail on high/critical)
+        run: pnpm audit --prod --audit-level high --ignore-registry-errors
+      - name: Registry signatures
+        run: pnpm audit signatures
+
+  e2e:
+    name: Build and end-to-end tests
+    runs-on: ubuntu-24.04
+    # The two Playwright runs (all projects, then the scan flow) take about 30 minutes together; 30 cut the
+    # second one off after every test of the first had passed.
+    timeout-minutes: 45
+    services:
+      postgres:
+        image: postgres:18-alpine # same tag as the local waqaya-postgres (18.4); Railway runs postgres-ssl:18
+        env:
+          POSTGRES_USER: waqaya
+          POSTGRES_PASSWORD: waqaya_ci
+          POSTGRES_DB: waqaya_e2e
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U waqaya -d waqaya_e2e"
+          --health-interval 5s --health-timeout 5s --health-retries 20
+    env:
+      DATABASE_URL: postgresql://waqaya:waqaya_ci@127.0.0.1:5432/waqaya_e2e
+      E2E_DATABASE_URL: postgresql://waqaya:waqaya_ci@127.0.0.1:5432/waqaya_e2e
+      E2E_PORT: "3100"
+      # Read at build time too (cacheComponents freezes service checks and metadata into static shells), so set
+      # them job-wide: the build and the server see the same values.
+      BETTER_AUTH_URL: http://127.0.0.1:3100
+      EMAIL_PROVIDER: file
+      WAQAYA_E2E: "1"
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: package.json
+      - uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
+        with:
+          cache: true
+      - run: pnpm install --frozen-lockfile
+      - name: Per-run auth secret (no repository secrets needed)
+        run: |
+          secret="$(openssl rand -base64 32)"
+          echo "::add-mask::$secret"
+          echo "BETTER_AUTH_SECRET=$secret" >> "$GITHUB_ENV"
+      - run: pnpm db:generate
+      - run: pnpm db:deploy
+      - name: Schema matches the migrations
+        run: pnpm db:drift
+      - run: pnpm db:seed
+      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: .next/cache
+          key: nextjs-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}-${{ hashFiles('app/**', 'components/**', 'lib/**', 'messages/**') }}
+          restore-keys: nextjs-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}-
+      - name: Build with no reachable database (like Railway's build)
+        run: pnpm build
+        env:
+          DATABASE_URL: postgresql://build:build@127.0.0.1:1/unreachable
+      - name: Playwright version
+        id: pw
+        run: echo "version=$(pnpm exec playwright --version | awk '{print $2}')" >> "$GITHUB_OUTPUT"
+      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ steps.pw.outputs.version }}
+      - run: pnpm exec playwright install --with-deps --only-shell chromium
+      - run: pnpm e2e
+      # The smart-scan flow end to end (upload, analysis, review, finalising, the report, deleting, access by scan id)
+      # with the e2e-only disk photo store and AI stand-in, on the same build (e2e/README.md, "Scan flow without S3
+      # or Anthropic"). The plain run above covers the storage-off pages.
+      - name: Scan flow with the e2e storage and AI stand-ins
+        run: pnpm e2e e2e/scans
+        env:
+          E2E_SCAN_SEAMS: "1"
+      - name: Upload the Playwright report
+        if: failure()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: playwright-report-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            playwright-report/
+            test-results/
+          retention-days: 14
+          if-no-files-found: ignore

@@ -1,0 +1,121 @@
+{
+  "title": "Settings",
+  "description": "Your profile, language, appearance, account security and the institutions you belong to.",
+  "nav": {
+    "label": "Settings sections",
+    "profile": "Profile",
+    "language": "Language",
+    "appearance": "Appearance",
+    "security": "Security",
+    "institutions": "Institutions"
+  },
+  "profile": {
+    "title": "Profile",
+    "description": "Your name is shown to colleagues in your institution, in reports and in training results.",
+    "memberSince": "On Waqaya since {date}",
+    "emailHint": "Your email is the address you sign in with and cannot be changed here.",
+    "verified": "Verified",
+    "submit": "Save changes",
+    "saving": "Saving…",
+    "saved": "Your profile changes were saved"
+  },
+  "language": {
+    "title": "Language",
+    "description": "The language of Waqaya's screens and of the emails you receive.",
+    "direction": {
+      "rtl": "Right to left",
+      "ltr": "Left to right"
+    },
+    "hint": "Choosing another language reopens the page in it.",
+    "saving": "Saving the language…",
+    "saved": "Your preferred language was saved",
+    "mismatch": "This page is shown in English, and your saved language is {language}.",
+    "openSaved": "Open the page in my saved language"
+  },
+  "appearance": {
+    "title": "Appearance",
+    "description": "The colors of the interface on this device.",
+    "light": "A light background that reads well in normal lighting.",
+    "dark": "A dark background that is easier on the eyes in a dim room.",
+    "system": "Follows your device's appearance setting automatically.",
+    "deviceOnly": "Your choice is saved in this browser only."
+  },
+  "security": {
+    "title": "Security",
+    "description": "Your password and the devices you are signed in on.",
+    "password": {
+      "title": "Password",
+      "lastChanged": "Last changed on {date}",
+      "hint": "Choose a long password that you do not use on any other site.",
+      "change": "Change password"
+    },
+    "sessions": {
+      "title": "Active sessions",
+      "description": "The devices and browsers signed in to your account right now. If you see one you do not recognize, sign it out and then change your password.",
+      "device": "{browser} on {os}",
+      "unknownBrowser": "Unknown browser",
+      "unknownDevice": "Unknown device",
+      "current": "This device",
+      "impersonated": "Platform admin access",
+      "signedIn": "Signed in {date} at {time}",
+      "lastActive": {
+        "now": "Active now",
+        "today": "Last active today",
+        "yesterday": "Last active yesterday",
+        "daysAgo": "{count, plural, one {Last active # day ago} other {Last active # days ago}}"
+      },
+      "signOut": "Sign out",
+      "signOutLabel": "Sign out {device}",
+      "signingOut": "Signing out…",
+      "signedOut": "Signed out {device}",
+      "onlyThis": "No other sessions: your account is open on this device only.",
+      "hidden": "{count, plural, one {One older session is not listed here; signing out the other sessions includes it.} other {# older sessions are not listed here; signing out the other sessions includes them.}}",
+      "signOutOthers": "Sign out other sessions",
+      "confirmTitle": "Sign out other sessions?",
+      "confirmDescription": "Every other device will have to sign in again. You stay signed in on this device.",
+      "confirm": "Sign them out",
+      "signedOutOthers": "{count, plural, =0 {There were no other sessions} one {Signed out one other session} other {Signed out # other sessions}}",
+      "impersonatingNote": "You are viewing this account as a platform admin, so its owner's devices cannot be signed out from here."
+    }
+  },
+  "institutions": {
+    "title": "Institutions",
+    "description": "The institutions you belong to. The active institution decides which data and reports you see in Waqaya.",
+    "active": "Active",
+    "joined": "Member since {date}",
+    "switch": "Switch",
+    "switchLabel": "Switch to {name}",
+    "switching": "Switching…",
+    "switched": "{name} is now your active institution",
+    "open": "Institution page",
+    "suspended": "Suspended",
+    "suspendedHint": "Suspended for now by the platform administration, so you cannot switch to it.",
+    "personal": {
+      "title": "Individual account",
+      "description": "Simulation training and your own results only, without any institution's data.",
+      "switchLabel": "Switch to the individual account",
+      "switched": "You are now using your individual account"
+    },
+    "empty": {
+      "title": "You do not belong to an institution yet",
+      "description": "You are using Waqaya with an individual account. When an institution invites you, the invitation arrives by email and is listed here too."
+    },
+    "invitations": {
+      "title": "Invitations waiting for your answer",
+      "role": "Role: {role}",
+      "expires": "Valid until {date}",
+      "view": "View invitation",
+      "viewLabel": "View invitation from {name}"
+    }
+  },
+  "errors": {
+    "generic": "The change could not be saved. Please try again.",
+    "network": "Could not reach the server. Check your connection and try again.",
+    "invalidInput": "Check the highlighted fields and try again.",
+    "tooManyRequests": "Too many changes in a short time. Wait a few minutes and try again.",
+    "impersonating": "This is not possible while you view another user's account as a platform admin.",
+    "sessionNotFound": "This session was not found; it may have ended or been signed out already. Refresh the page.",
+    "currentSession": "This is your current session. To sign out of it, use the account menu at the top of the page.",
+    "sessionExpired": "Your session has ended. Sign in again and retry."
+  }
+}

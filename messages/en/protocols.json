@@ -1,0 +1,415 @@
+{
+  "title": "Protocols",
+  "description": "Hygiene and infection-control protocols, their steps and references.",
+  "library": {
+    "searchLabel": "Search protocols",
+    "searchPlaceholder": "Protocol name or a word from its steps",
+    "clearSearch": "Clear search text",
+    "categoriesLabel": "Filter by category",
+    "allCategories": "All",
+    "count": "{total, plural, =0 {No protocols} one {# protocol} other {# protocols}}",
+    "filteredCount": "Showing {shown} of {total, plural, one {# protocol} other {# protocols}}",
+    "empty": {
+      "title": "No published protocols yet",
+      "description": "Protocols appear here as soon as they are published."
+    },
+    "noResults": {
+      "description": "No protocol matches “{q}”. Try another word or category.",
+      "descriptionCategory": "There are no published protocols in this category right now.",
+      "clear": "Clear search and filters"
+    }
+  },
+  "card": {
+    "basedOn": "Based on: {title}",
+    "steps": "{count, plural, =0 {No steps} one {# step} other {# steps}}",
+    "mandatory": "{count, plural, =0 {No mandatory steps} one {# mandatory step} other {# mandatory steps}}",
+    "critical": "{count, plural, =0 {No critical steps} one {# critical step} other {# critical steps}}"
+  },
+  "own": "Your institution's protocol",
+  "detail": {
+    "summaryLabel": "Protocol summary",
+    "stats": {
+      "steps": "Steps",
+      "mandatory": "Mandatory",
+      "critical": "Critical",
+      "visual": "Photo-checkable"
+    },
+    "about": "About this protocol",
+    "steps": "Steps",
+    "stepsHint": "Each step explains why it matters and cites the source it is based on.",
+    "stepNumber": "Step {number}",
+    "why": "Why it matters",
+    "criteria": "What a photo must show",
+    "reference": "Reference",
+    "opensInNewTab": "(opens in a new tab)",
+    "scan": "Scan with this protocol",
+    "train": "Train on this"
+  },
+  "custom": {
+    "basedOn": "This is your institution's version of <link>{title}</link>.",
+    "basedOnHidden": "This is your institution's version of a global protocol that is no longer published.",
+    "own": "This protocol belongs to your institution; only its members can see it."
+  },
+  "badges": {
+    "mandatory": "Mandatory",
+    "recommended": "Recommended",
+    "critical": "Critical",
+    "visual": "Photo-checkable",
+    "weight": "Weight {weight} of 3"
+  },
+  "legend": {
+    "title": "What the badges mean",
+    "mandatory": "Required every time; missing it raises the risk level to at least “medium”.",
+    "recommended": "Good practice that counts toward the score but does not raise the risk level on its own.",
+    "critical": "A violation is an automatic “high” risk, whatever the rest of the result.",
+    "visual": "A still photo can show it, so the smart scan checks it.",
+    "weight": "From 1 to 3; the higher the weight, the more the step counts toward the score."
+  },
+  "training": {
+    "title": "Train on this protocol",
+    "description": "Simulation scenarios that put you in realistic situations where you apply these steps.",
+    "fromSource": "Your institution's version has no scenarios of its own yet, so these come from the global protocol it is based on.",
+    "empty": "There is no training scenario for this protocol yet.",
+    "browse": "Browse all scenarios",
+    "minutes": "{count, plural, =0 {Under a minute} one {# minute} other {# minutes}}",
+    "stages": "{count, plural, =0 {No stages} one {# stage} other {# stages}}",
+    "own": "Your institution"
+  },
+  "editor": {
+    "newTitle": "New protocol",
+    "untitled": "Untitled protocol",
+    "back": {
+      "global": "All global protocols",
+      "institution": "Institution protocols"
+    },
+    "address": "Page address",
+    "status": {
+      "label": "Status",
+      "draft": "Draft",
+      "published": "Published"
+    },
+    "audience": {
+      "globalDraft": "Only platform admins can see this draft.",
+      "globalPublished": "Every user of the platform sees it in the library, and every institution's examiners can scan with it.",
+      "institutionDraft": "Only your institution's owners and admins can see this draft.",
+      "institutionPublished": "Your institution's members see it in the library, and your examiners can scan with it."
+    },
+    "basics": {
+      "title": "Basic information",
+      "description": "Shown on the library card and at the top of the protocol page."
+    },
+    "fields": {
+      "titleAr": "Title in Arabic",
+      "titleEn": "Title in English",
+      "summaryAr": "Summary in Arabic",
+      "summaryEn": "Summary in English",
+      "summaryHint": "One or two sentences for the library card.",
+      "descriptionAr": "Description in Arabic",
+      "descriptionEn": "Description in English",
+      "descriptionHint": "When and where the protocol applies, and who it is for.",
+      "category": "Category",
+      "icon": "Icon",
+      "slug": "Page address",
+      "slugHint": "Lowercase English letters, digits and hyphens. It is filled in from the English title and cannot be changed after the protocol is created."
+    },
+    "icons": {
+      "syringe": "Syringe",
+      "trash": "Waste bin",
+      "droplets": "Drops",
+      "cleaning": "Cleaning brush",
+      "hand": "Hand",
+      "flask": "Laboratory flask",
+      "food": "Food",
+      "wrench": "Maintenance",
+      "book": "Checklist"
+    },
+    "steps": {
+      "title": "Steps",
+      "description": "Put the steps in the order staff carry them out. Give each one a short reason, and cite the WHO or CDC guidance it is based on.",
+      "count": "{count, plural, =0 {no steps} one {# step} other {# steps}}",
+      "number": "Step {number}",
+      "untitled": "New step (no text yet)",
+      "add": "Add a step",
+      "added": "Step {number} added.",
+      "limit": "A protocol can have up to {max} steps.",
+      "moveUp": "Move step {number} up",
+      "moveDown": "Move step {number} down",
+      "remove": "Remove step {number}",
+      "moved": "Step moved to position {number}.",
+      "removed": "Step {number} removed. It is deleted when you save.",
+      "undo": "Undo",
+      "restored": "Step restored.",
+      "needsAttention": "Needs attention",
+      "usage": "{count, plural, one {Used in # result} other {Used in # results}}",
+      "lockedTitle": "This step already has results",
+      "locked": "It cannot be removed, and whether it is mandatory or critical, its weight and its photo check stay as they are, so past results keep their meaning. You can still fix its wording, which past reports then show too; to change what it asks for, create a new version of the protocol.",
+      "lastStep": "A protocol needs at least one step.",
+      "fields": {
+        "textAr": "Step in Arabic",
+        "textEn": "Step in English",
+        "textHint": "One clear action, e.g. “Drop the used needle straight into the sharps container.”",
+        "rationaleAr": "Why it matters, in Arabic",
+        "rationaleEn": "Why it matters, in English",
+        "rationaleHint": "The reason in a sentence or two; trainees read it when they get the step wrong.",
+        "mandatory": "Mandatory",
+        "mandatoryHint": "Required every time. Missing it raises the risk to at least “medium”.",
+        "mandatoryLocked": "Critical steps are always mandatory.",
+        "critical": "Critical",
+        "criticalHint": "A violation means “high” risk automatically, e.g. recapping a used needle.",
+        "weight": "Weight",
+        "weightHint": "How much the step counts toward the score.",
+        "weight1": "Standard",
+        "weight2": "Important",
+        "weight3": "Essential",
+        "visual": "Can be checked in a photo",
+        "visualHint": "The smart scan checks it from the examiner's photos. Only for things a still photo can show.",
+        "criteriaAr": "What the photo must show, in Arabic",
+        "criteriaEn": "What the photo must show, in English",
+        "criteriaHint": "What a compliant photo looks like, e.g. “The sharps container is closed and filled below the line.”",
+        "referenceLabel": "Reference",
+        "referenceLabelHint": "The guideline the step is based on, e.g. <en>WHO Guidelines on Hand Hygiene in Health Care (2009)</en>.",
+        "referenceUrl": "Reference link",
+        "referenceUrlHint": "A secure address that starts with <en>https://</en>"
+      },
+      "linked": "{count, plural, one {Linked to # scenario answer} other {Linked to # scenario answers}}",
+      "linkedTitle": "A training scenario uses this step",
+      "linkedNote": "It cannot be removed while a scenario answer is linked to it. You can still change it; to remove it, create a new version of the protocol.",
+      "removedTitle": "Removed steps (deleted when you save)",
+      "removedRow": "Step {number}",
+      "undoLabel": "Undo removing step {number}"
+    },
+    "actions": {
+      "create": "Create protocol",
+      "creating": "Creating…",
+      "save": "Save changes",
+      "saving": "Saving…",
+      "publish": "Publish",
+      "publishing": "Publishing…",
+      "unpublish": "Unpublish",
+      "unpublishing": "Unpublishing…",
+      "newVersion": "Create a new version",
+      "creatingVersion": "Creating…",
+      "delete": "Delete draft",
+      "deleting": "Deleting…",
+      "viewInLibrary": "View in the library",
+      "unpublishOld": "Unpublish the old version"
+    },
+    "saveBar": {
+      "unsaved": "You have unsaved changes.",
+      "saved": "All changes are saved.",
+      "newDraft": "The protocol is saved as a draft; you can publish it afterwards.",
+      "live": "Published: saved changes appear right away.",
+      "saveFirst": "Save your changes before you publish or unpublish."
+    },
+    "dialogs": {
+      "publish": {
+        "title": "Publish this protocol?",
+        "global": "Every user of the platform will see it in the library, every institution's examiners can scan with it, and scenarios linked to it can be played.",
+        "institution": "Your institution's members will see it in the library, and your examiners can scan with it."
+      },
+      "unpublish": {
+        "title": "Unpublish this protocol?",
+        "global": "It leaves the library for everyone and can no longer be chosen for new scans. Past results are kept, and you can publish it again at any time.",
+        "institution": "It leaves your institution's library and can no longer be chosen for new scans. Past results are kept, and you can publish it again at any time."
+      },
+      "version": {
+        "title": "Create a new version?",
+        "description": "An unpublished copy with all the steps is created. Edit it, publish it, then unpublish this version. Past results stay with this version.",
+        "copies": "{count, plural, one {One institution copy was} other {# institution copies were}} made from this version. Copies never change by themselves, but the owners and admins of those institutions see a note about the new version once it is published. The copies show this version's training scenarios while it has published ones, otherwise the new version's."
+      },
+      "delete": {
+        "title": "Delete this draft?",
+        "description": "The protocol and its steps are deleted for good. This cannot be undone."
+      },
+      "hiddenScenarios": "{count, plural, one {One training scenario is linked to this protocol; it is hidden with it.} other {# training scenarios are linked to this protocol; they are hidden with it.}}",
+      "hiddenScenariosInstitution": "{count, plural, one {One training scenario is linked to this protocol; it is hidden with it.} other {# training scenarios are linked to this protocol; they are hidden with it.}}",
+      "moveScenarios": "{count, plural, one {One training scenario is linked to this version. It stays with it and is hidden when it is unpublished, so move or copy it to the new version in the <link>scenario editor</link> first.} other {# training scenarios are linked to this version. They stay with it and are hidden when it is unpublished, so move or copy them to the new version in the <link>scenario editor</link> first.}}",
+      "moveScenariosInstitution": "{count, plural, one {One training scenario is linked to this version. It stays with it and is hidden when it is unpublished.} other {# training scenarios are linked to this version. They stay with it and are hidden when it is unpublished.}}",
+      "copiesKeep": "{count, plural, one {One institution copy was made from it. It stays published, and then shows the training scenarios of the newest published version of this protocol, if there is one.} other {# institution copies were made from it. They stay published, and then show the training scenarios of the newest published version of this protocol, if there is one.}}",
+      "unpublishOld": {
+        "title": "Unpublish the old version?",
+        "description": "The old version, “{title}”, leaves the library and can no longer be chosen for new scans. Its past results are kept.",
+        "scenarios": "{count, plural, one {One training scenario is still linked to it; it is hidden with it.} other {# training scenarios are still linked to it; they are hidden with it.}}",
+        "copies": "{count, plural, one {One institution copy was made from it. It stays published, and then shows this version's training scenarios.} other {# institution copies were made from it. They stay published, and then show this version's training scenarios.}}"
+      }
+    },
+    "toasts": {
+      "created": "Protocol created as a draft.",
+      "saved": "Changes saved.",
+      "published": "Protocol published.",
+      "unpublished": "Protocol unpublished.",
+      "versioned": "New version created as a draft.",
+      "deleted": "Draft deleted.",
+      "copied": "Copied into your institution as a draft.",
+      "oldUnpublished": "The old version is unpublished."
+    },
+    "errors": {
+      "generic": "The change could not be saved. Please try again.",
+      "invalid": "Some fields need attention.",
+      "invalidCount": "{count, plural, one {# field needs attention.} other {# fields need attention.}}",
+      "notFound": "This protocol no longer exists, or you can no longer change it.",
+      "conflict": "Someone else changed this protocol while you were editing it. Reload the page to see their changes, then make yours again.",
+      "reload": "Reload the page",
+      "slugTaken": "Another protocol already uses this address.",
+      "stepHasHistory": "A removed step already has results, so it cannot be deleted. Reload the page to get it back, or create a new version.",
+      "hasHistory": "This protocol has results, scenarios or institution copies, so it cannot be deleted. Unpublish it instead.",
+      "published": "Unpublish the protocol before deleting it.",
+      "sourceUnavailable": "This global protocol is no longer published, so it cannot be copied.",
+      "limit": "Your institution has reached the limit of {max} protocols.",
+      "tooManyRequests": "Too many changes in a short time. Wait a minute and try again.",
+      "network": "The server could not be reached. Check your connection and try again.",
+      "stepLocked": "A step that already has results cannot change whether it is mandatory or critical, its weight or its photo check. Reload the page to see the saved values, or create a new version.",
+      "lockedField": "This step already has results, so this cannot change.",
+      "wordingConfirm": "Some steps that already have results would get new wording. Confirm the change to save it."
+    },
+    "history": {
+      "title": "How changes work",
+      "live": "A published protocol is live: saved changes show up right away in the library, in new scans and in new simulation attempts.",
+      "pastResults": "Past scans and simulation results keep the scores they already have. Their reports show each step's current wording, so a wording fix shows there too; the editor asks before it rewords a step that has results.",
+      "locked": "Steps that already have results cannot be removed, and what they ask for (mandatory, critical, weight, photo check) stays as it is. A protocol with results cannot be deleted.",
+      "version": "To remove such a step or change what it asks for, create a new version: edit it, publish it, then unpublish the old one.",
+      "versionHint": "This protocol already has results. For bigger changes, work on a new version.",
+      "usageTitle": "Used so far",
+      "scans": "{count, plural, =0 {No scans} one {# scan} other {# scans}}",
+      "scenarios": "{count, plural, =0 {No scenarios} one {# scenario} other {# scenarios}}",
+      "results": "{count, plural, =0 {No step results} one {# step result} other {# step results}}",
+      "copies": "{count, plural, =0 {No institution copies} one {# institution copy} other {# institution copies}}",
+      "unused": "Nothing uses this draft yet, so it can still be deleted.",
+      "deleteBlockedHistory": "It has results, scenarios or copies, so it is never deleted. Unpublish it instead.",
+      "deleteBlockedPublished": "To delete it, unpublish it first.",
+      "options": "{count, plural, =0 {No scenario answers linked} one {# scenario answer linked} other {# scenario answers linked}}"
+    },
+    "links": {
+      "copyOf": "Copied from the global protocol <link>{title}</link>. Changes to that protocol do not change this copy.",
+      "copyOfUnpublished": "Copied from the global protocol <b>{title}</b>, which is no longer published.",
+      "versionOf": "This is a new version of <link>{title}</link>.",
+      "versionOfPublished": "After you publish it, unpublish the old version so people see only one.",
+      "versionOfBothPublished": "The old version is still published, so members see both. Unpublish it.",
+      "versionOfScenarios": "{count, plural, one {One training scenario is still linked to the old version. Move or copy it to this version in the <link>scenario editor</link> before you unpublish the old one, or it is hidden with it.} other {# training scenarios are still linked to the old version. Move or copy them to this version in the <link>scenario editor</link> before you unpublish the old one, or they are hidden with it.}}",
+      "versionOfScenariosInstitution": "{count, plural, one {One training scenario is still linked to the old version; it is hidden when the old version is unpublished.} other {# training scenarios are still linked to the old version; they are hidden when the old version is unpublished.}}",
+      "versionOfScenariosHidden": "{count, plural, one {One training scenario is still linked to the old version, and it is hidden because that version is unpublished. Move or copy it to this version in the <link>scenario editor</link>.} other {# training scenarios are still linked to the old version, and they are hidden because that version is unpublished. Move or copy them to this version in the <link>scenario editor</link>.}}",
+      "versionOfScenariosHiddenInstitution": "{count, plural, one {One training scenario is still linked to the old version, and it is hidden because that version is unpublished.} other {# training scenarios are still linked to the old version, and they are hidden because that version is unpublished.}}",
+      "versionOfCopies": "{count, plural, one {One institution copy was} other {# institution copies were}} made from the old version. Copies never change by themselves, but the owners and admins of those institutions see a note about this version once it is published. The copies show the old version's training scenarios while it has published ones, otherwise this version's.",
+      "newerVersion": "A newer version of this protocol exists: <link>{title}</link>.",
+      "newerBothPublished": "Both versions are published, so members see both: unpublish this one.",
+      "newerDraft": "It is still a draft.",
+      "newerSource": "A newer version of the global protocol this copy is based on is published: <link>{title}</link>. Your copy does not change by itself. To adopt the changes, <copy>copy the new version</copy>, adapt it and publish it, then unpublish this copy.",
+      "newerSourceCopied": "A newer version of the global protocol this copy is based on is published: <link>{title}</link>. Your institution already has a copy of it: <copy>open that copy</copy>. Once it is published, unpublish this one, so members see only one."
+    },
+    "metaTitle": "Edit: {title}",
+    "leave": {
+      "title": "Leave without saving?",
+      "description": "Your changes to this protocol are not saved yet. If you leave now, they are lost.",
+      "stay": "Stay on the page",
+      "leave": "Leave without saving",
+      "leftTitle": "Your changes to the protocol are not saved",
+      "leftDescription": "You can still get them back: return to the editor and save them.",
+      "leftAction": "Back to the editor"
+    },
+    "wording": {
+      "title": "Save the new wording of steps that have results?",
+      "description": "Past scan reports and simulation results show each step's current wording, so they will show the new text of:",
+      "advice": "That is right for fixing a typo or making a step clearer. To change what a step asks for, create a new version of the protocol instead.",
+      "confirm": "Save the new wording",
+      "cancel": "Keep editing"
+    }
+  },
+  "manage": {
+    "steps": "{count, plural, =0 {No steps} one {# step} other {# steps}}",
+    "scans": "{count, plural, =0 {No scans} one {# scan} other {# scans}}",
+    "scenarios": "{count, plural, =0 {No scenarios} one {# scenario} other {# scenarios}}",
+    "copies": "{count, plural, one {# institution copy} other {# institution copies}}",
+    "updated": "Updated {date}",
+    "basedOn": "Based on: {title}",
+    "institution": "Institution: {name}",
+    "ownProtocol": "Written by the institution",
+    "summary": "{total, plural, one {# protocol} other {# protocols}}, {drafts, plural, =0 {no drafts} one {# draft} other {# drafts}}",
+    "count": "{count, plural, =0 {No protocols} one {# protocol} other {# protocols}}",
+    "newerSource": "A newer version of the global protocol is published"
+  },
+  "admin": {
+    "description": "Write and maintain the protocols every user of the platform sees, and look over the versions institutions adapt for themselves.",
+    "views": {
+      "label": "Protocol lists",
+      "global": "Global protocols",
+      "institutions": "Institutions' protocols"
+    },
+    "new": "New protocol",
+    "newDescription": "It stays a draft, visible to platform admins only, until you publish it.",
+    "global": {
+      "empty": {
+        "title": "No global protocols yet",
+        "description": "Create the first protocol. It stays a draft until you publish it."
+      }
+    },
+    "institutions": {
+      "title": "Institutions' protocols",
+      "note": "Read-only: each institution's owners and admins manage its protocols.",
+      "searchLabel": "Search institutions' protocols",
+      "searchPlaceholder": "Protocol or institution",
+      "results": "{count, plural, =0 {No results} one {# result} other {# results}}",
+      "empty": {
+        "title": "No institution protocols yet",
+        "description": "Protocols that institutions copy or write for themselves appear here."
+      },
+      "noResults": "No institution protocol matches “{q}”.",
+      "clear": "Clear the search",
+      "pagination": "Pages",
+      "page": "Page {page} of {pages}"
+    },
+    "readOnly": {
+      "back": "Institutions' protocols",
+      "note": "This protocol belongs to {institution}; only that institution's owners and admins can change it.",
+      "basedOn": "It is based on the global protocol “{title}”.",
+      "own": "The institution wrote it itself."
+    },
+    "title": "Protocol management"
+  },
+  "org": {
+    "description": "Your institution's own protocols. Copy a global protocol and adapt it to your wards, or write one from scratch; members see it once you publish it.",
+    "descriptionExaminer": "The protocols your institution has published for its members.",
+    "copy": "Copy a global protocol",
+    "blank": "Start from scratch",
+    "back": "Institution protocols",
+    "readOnly": "Only your institution's owners and admins can change these protocols.",
+    "listTitle": "Your institution's protocols",
+    "empty": {
+      "title": "Your institution has no protocols of its own yet",
+      "description": "Copy a global protocol to adapt it, or start from scratch. Members see a protocol only after you publish it."
+    },
+    "emptyExaminer": {
+      "title": "Your institution has not published protocols of its own",
+      "description": "The global protocols are always in the library.",
+      "library": "Open the library"
+    },
+    "copyPage": {
+      "title": "Copy a global protocol",
+      "description": "The copy keeps every step and stays a draft until you publish it. Later changes to the global protocol do not change your copy.",
+      "listTitle": "Published global protocols",
+      "action": "Copy",
+      "actionLabel": "Copy “{title}”",
+      "copying": "Copying…",
+      "copies": "{count, plural, one {Your institution already has a copy} other {Your institution already has # copies}}",
+      "preview": "Preview",
+      "previewLabel": "Preview “{title}”",
+      "empty": {
+        "title": "No global protocols are published yet",
+        "description": "You can start a protocol of your own from scratch."
+      },
+      "openCopy": "Open your copy",
+      "openCopyLabel": "Open your copy of “{title}”",
+      "again": "Make another copy",
+      "againLabel": "Make another copy of “{title}”",
+      "againTitle": "Make another copy?",
+      "againDescription": "Your institution already has a copy of “{title}”. Another copy is a separate protocol with the same title: once both are published, members see both.",
+      "newerVersion": "A newer version of this protocol is published. <link>See the newer version</link>",
+      "newerVersionLabel": "See the newer version of “{title}”",
+      "olderVersionCopy": "Your institution has a copy of an older version of this protocol. <link>Open that copy</link>. To adopt this version, copy it, adapt it and publish it, then unpublish the old copy.",
+      "olderVersionCopyLabel": "Open that copy (an older version of “{title}”)"
+    },
+    "newPage": {
+      "title": "New institution protocol",
+      "description": "Write a protocol of your own. It stays a draft, visible only to your institution's owners and admins, until you publish it."
+    }
+  }
+}

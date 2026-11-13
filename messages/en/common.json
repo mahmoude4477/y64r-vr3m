@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "title": "Waqaya",
+    "description": "A smart digital system that measures and analyses compliance with hygiene and infection-control protocols",
+    "tagline": "Infection-control compliance platform"
+  },
+  "appName": "Waqaya",
+  "skipToContent": "Skip to content",
+  "localeSwitcher": {
+    "label": "Change language",
+    "switchTo": "العربية",
+    "ar": "العربية",
+    "en": "English"
+  },
+  "theme": {
+    "label": "Theme",
+    "toggle": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "actions": {
+    "save": "Save",
+    "saving": "Saving…",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "add": "Add",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "close": "Close",
+    "confirm": "Confirm",
+    "retry": "Try again",
+    "search": "Search",
+    "filter": "Filter",
+    "export": "Export",
+    "exportCsv": "Export CSV",
+    "print": "Print",
+    "viewAll": "View all",
+    "view": "View",
+    "open": "Open",
+    "copy": "Copy",
+    "copied": "Copied",
+    "continue": "Continue",
+    "start": "Start",
+    "finish": "Finish",
+    "publish": "Publish",
+    "unpublish": "Unpublish"
+  },
+  "states": {
+    "loading": "Loading…",
+    "empty": "Nothing here yet",
+    "noResults": "No matching results",
+    "error": "Something went wrong",
+    "errorDescription": "The request could not be completed. Please try again shortly.",
+    "comingSoon": "This section is being built and will appear here soon.",
+    "storageOff": "Photo storage is not configured on this server yet, so photos cannot be uploaded right now.",
+    "emailOff": "Email is turned off on this server, so no messages will be sent.",
+    "aiOff": "The AI service is not configured on this server yet.",
+    "aiLimit": "You have reached today's AI usage limit. Please try again tomorrow.",
+    "aiBusy": "Too many AI requests at once. Please wait a minute and try again."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page may have moved, or the link is incorrect.",
+    "home": "Back to home"
+  },
+  "error": {
+    "title": "Something went wrong",
+    "description": "Sorry, an error occurred while loading this page.",
+    "retry": "Try again",
+    "reference": "Reference: <ref>{digest}</ref>"
+  },
+  "risk": {
+    "label": "Risk level",
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High"
+  },
+  "verdict": {
+    "compliant": "Compliant",
+    "non_compliant": "Non-compliant",
+    "not_visible": "Not visible",
+    "not_applicable": "Not applicable"
+  },
+  "difficulty": {
+    "beginner": "Beginner",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced"
+  },
+  "category": {
+    "safety": "Safety",
+    "hygiene": "Hygiene",
+    "waste": "Waste",
+    "maintenance": "Maintenance",
+    "other": "Other"
+  },
+  "roles": {
+    "owner": "Institution owner",
+    "admin": "Institution admin",
+    "examiner": "Examiner",
+    "trainee": "Trainee",
+    "platformAdmin": "Platform admin",
+    "protocolEditor": "Protocol editor",
+    "user": "User"
+  },
+  "orgType": {
+    "university": "University",
+    "hospital": "Hospital",
+    "training_center": "Training center",
+    "government": "Government"
+  },
+  "score": {
+    "label": "Score",
+    "value": "{score}%",
+    "outOf": "{score} of 100",
+    "notAssessable": "Not assessable",
+    "notAssessableHint": "No step could be assessed, so there is no score."
+  },
+  "attemptStatus": {
+    "in_progress": "In progress",
+    "completed": "Completed",
+    "abandoned": "Abandoned"
+  },
+  "scanStatus": {
+    "draft": "Draft",
+    "analyzing": "Analyzing",
+    "review": "In review",
+    "finalized": "Finalized",
+    "failed": "Analysis failed"
+  },
+  "marketing": {
+    "signIn": "Sign in",
+    "signUp": "Create a free account",
+    "signUpShort": "Create account",
+    "goToApp": "Dashboard",
+    "rights": "© {year} Waqaya. All rights reserved.",
+    "disclaimer": "Medical content is educational and based on WHO and CDC guidance; it does not replace your facility's policies.",
+    "nav": {
+      "label": "Page sections",
+      "features": "Features",
+      "howItWorks": "How it works",
+      "institutions": "For institutions"
+    }
+  },
+  "toasts": {
+    "region": "Notifications",
+    "close": "Close notification"
+  },
+  "deletedUser": "Deleted account",
+  "system": "System",
+  "impersonation": {
+    "label": "Acting as a user",
+    "banner": "Acting as <b>{name}</b>: pages show what this user sees.",
+    "stop": "Return to my account",
+    "stopping": "Returning…",
+    "failed": "Could not return to your account. Sign out, then sign in again."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "required": "This field is required",
+  "invalidType": "Invalid value",
+  "tooShort": "Must be at least {min} characters",
+  "tooLong": "Must be at most {max} characters",
+  "tooSmall": "Must be at least {min}",
+  "tooBig": "Must be at most {max}",
+  "email": "Enter a valid email address",
+  "invalidFormat": "Invalid format",
+  "invalidOption": "Choose an option from the list",
+  "passwordsMismatch": "Passwords do not match",
+  "passwordSameAsCurrent": "The new password must differ from the current one",
+  "otp": "Enter the 6-digit code",
+  "url": "Enter a valid URL",
+  "httpsOnly": "Use a secure link that starts with https://",
+  "slug": "Use lowercase English letters, digits and hyphens only",
+  "visualCriteriaRequired": "A visual step needs photo criteria in both languages",
+  "duplicateStepKey": "Each step needs its own key"
+}
